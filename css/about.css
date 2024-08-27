@@ -13,7 +13,9 @@ body{
 }
 
 
-#section{overflow: hidden;}
+#section{
+  width: 100%;
+}
 #section .main{width: 100%; margin: 0 auto; text-align: center;}
 #section .main .main_title{
   font-size: 30pt;
@@ -173,7 +175,9 @@ body{
   text-align: center;
 }
 #section .value{
-  width: 1280px;margin: 0 auto;
+  width: 1280px;
+  height: 750px;
+  margin: 0 auto;
 }
 #section .value .value_txt{
   text-align: center;
@@ -192,23 +196,56 @@ body{
   justify-content: center;
 }
 #section .tab_bt{
-  width: 50%; 
+  width: 50%;
   text-align: center;
 }
 #section .tab_bt li{
+  width: 100px;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+  line-height: 30px;
+}
+#section .tab_bt li p{
   width: 100px; text-align: center;
   border: 1px solid #000;
   border-radius: 30px;
+  margin-top: 30px;
+  cursor: pointer;
 }
 #section .tab_conts{
   width: 50%;
+  position: relative;
+}
+#section .tab_conts li{
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 0;left:0;
 }
 #section .tab_conts li img{
   width: 80%;
 }
-#section .tab_conts li .tab_txt{
-  text-align: center;
-  width: 50%;
+#section .tab_txt{
+  margin-top: 20px;
+}
+#section .background{
+  background-image: url(../images/model\ \(1\).png);
+  margin-top: 100px;
+  width: 100%;
+  height: 500px;
+}
+#section .pradagroup{
+  margin-top: 100px;
+}
+#section .pradagroup .pradagroup_title{
+  font-size: 30pt;
+}
+#section .pradagroup .logo_gr{
+  display: flex;
+  background-color: yellow;
+}
+#section .pradagroup .logo_gr li{
+  width: 20%;
 }
 
 
