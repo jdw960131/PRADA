@@ -203,4 +203,18 @@ body{
     z-index: -1;
 }
 /* --------------------------------------------------- */
+#section .section6 .sphere>h1{
+    font-size: 60px;
+}
+#section .section6 .sphere>button{
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+
 /* --------------------------------------------------- */
