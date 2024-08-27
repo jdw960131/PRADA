@@ -203,10 +203,18 @@ body{
     z-index: -1;
 }
 /* --------------------------------------------------- */
-#section .section6 .sphere>h1{
+#section .section6 .prada_sphere{
+    display: flex;
+}
+#section .section6 .prada_sphere .sphere{
+    width: 50%;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+#section .section6 .prada_sphere .sphere>h1{
     font-size: 60px;
 }
-#section .section6 .sphere>button{
+#section .section6 .prada_sphere .sphere>button{
     width: 200px;
     height: 40px;
     font-size: 20px;
@@ -218,3 +226,59 @@ body{
 }
 
 /* --------------------------------------------------- */
+#footer{
+    background-color: #000;
+    color: white;
+}
+#footer .footer_top{
+    display: flex;
+    border: 1px solid white;
+    box-sizing: border-box;
+}
+#footer .footer_top .logo{
+    padding-right: 100px;
+}
+#footer .footer_top .logo>a>img{
+    width: 200px;
+}
+#footer .footer_top .fnb_wrap{
+    border: 1px solid red;
+    box-sizing: border-box;
+    padding-right: 600px;
+}
+#footer .footer_top .fnb_wrap .fnb{
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid white;
+    box-sizing: border-box;
+}
+#footer .footer_top .fnb_wrap .fnb>li{
+    padding: 70px 0px;
+}
+#footer .footer_top .fnb_wrap .fnb>li>a{
+    color: white;
+}
+#footer .footer_top .sns_wrap .sns{
+    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid white;
+    box-sizing: border-box;
+}
+#footer .footer_top .sns_wrap .sns>li{
+    padding: 70px 0px;
+}
+#footer .footer_top .sns_wrap .sns>li>a>i{
+    color: white;
+    font-size: 23px;
+}
+/* --------------------------------------------------- */
+#footer .footer_bottom{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+#footer .footer_bottom .copyright{
+    color: #686868;
+}
