@@ -50,10 +50,6 @@ body{
     width: 1280px;
     margin: 0 auto;
 }
-#section .section1{}
-#section .section2{
-
-}
 #section .section2 .discover{
     
     border: 1px solid black;
@@ -149,6 +145,10 @@ body{
     border: none;
 }
 /* --------------------------------------------------- */
+
+#section .section5 .perfume{
+    position: relative;
+}
 #section .section5 .perfume hr{
     width: 500px;
     color: red;
@@ -175,7 +175,7 @@ body{
     /* border: 1px solid black; */
     box-sizing: border-box;
     width: 1280px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 #section .section5 .perfume .perfume_list_wrap .perfume_list{
     border: 1px solid blue;
@@ -188,9 +188,19 @@ body{
     border: 1px solid red;
     box-sizing: border-box;
     width: 25%;
+    text-align: center;
 }
 #section .section5 .perfume .perfume_list_wrap .perfume_list>li img{
     width: 100%;
+}
+#section .section5 .perfume .perfume_bar{
+    width: 1920px;
+    height: 200px;
+    background-color:#e4e4e444;
+    position: absolute;
+    left: -330px;
+    bottom: 0px;
+    z-index: -1;
 }
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
