@@ -17,8 +17,180 @@ body{
     font-style: normal;
 }
 /* --------------------------------------------------- */
+#header .logo{
+    width: 200px;
+    margin: 30px auto;
+}
+#header .logo img{
+    width: 200px;
+}
+#header .gnb_wrap .gnb{
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+#header .gnb_wrap .gnb>li{
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+#header .gnb_wrap .gnb>li>a{
+    font-size: 17px;
+    font-weight: 700;
+}
+#header .gnb_wrap .gnb .sub{
+    margin-top: 15px;
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+/* --------------------------------------------------- */
+#section{
+    width: 1280px;
+    margin: 0 auto;
+}
+#section .section1{}
+#section .section2{
 
+}
+#section .section2 .discover{
+    
+    border: 1px solid black;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#section .section2 .discover .dis_01>img,
+#section .section2 .discover .dis_04>img{
+    width: 401px;
+    margin-top: 20px;
+}
+#section .section2 .discover .dis_02>img,
+#section .section2 .discover .dis_03>img{
+    width: 850px;
+    margin-top: 20px;
+}
 /* --------------------------------------------------- */
+#section .section3 .ready .ready_list{
+    border: 1px solid black;
+    box-sizing: border-box;
+    display: flex;
+}
+#section .section3 .ready .ready_list>li>a>img{
+    width: 200px;
+}
 /* --------------------------------------------------- */
+#section .section4 .fine_wrap{
+    width: 100%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    display: flex;
+}
+#section .section4 .fine_wrap .fine_01{
+    width: 50%;
+    height: 640px;
+    text-align: center;
+    background-color: #D9D9D9;
+    font-size: 30px;
+    color: #525252;
+    padding-top: 150px;
+    box-sizing: border-box;
+}
+#section .section4 .fine_wrap .fine_01 button{
+    width: 200px;
+    font-size: 25px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin-top: 50px;
+    background-color: #C0DBD3;
+    border: none;
+}
+#section .section4 .fine_wrap .fine_02{
+    width: 50%;
+    height: 640px;
+    overflow: hidden;
+}
+#section .section4 .fine_wrap .fine_02>img{
+    width: 100%;
+    margin-top: -400px;
+}
+#section .section4 .living_wrap{
+    width: 100%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    display: flex;
+}
+#section .section4 .living_wrap .living_01{
+    width: 50%;
+    height: 640px;
+    overflow: hidden;
+}
+#section .section4 .living_wrap .living_01>img{
+    width: 100%;
+}
+#section .section4 .living_wrap .living_02{
+    width: 50%;
+    height: 640px;
+    text-align: center;
+    background-color: #C0DBD3;
+    font-size: 30px;
+    color: #525252;
+    padding-top: 230px;
+    box-sizing: border-box;
+}
+#section .section4 .living_wrap .living_02>button{
+    width: 200px;
+    font-size: 25px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin-top: 50px;
+    border: none;
+}
+/* --------------------------------------------------- */
+#section .section5 .perfume hr{
+    width: 500px;
+    color: red;
+}
+#section .section5 .perfume .perfume_intro{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+#section .section5 .perfume .perfume_intro>img{
+    width: 500px;
+    
+}
+#section .section5 .perfume .perfume_intro>p{
+    border: 1px solid black;
+    box-sizing: border-box;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    padding-top: 150px;
+}
+#section .section5 .perfume .perfume_list_wrap{
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    width: 1280px;
+    overflow: hidden;
+}
+#section .section5 .perfume .perfume_list_wrap .perfume_list{
+    border: 1px solid blue;
+    box-sizing: border-box;
+    width: 300%;
+    display: flex;
+    justify-content: space-between;
+}
+#section .section5 .perfume .perfume_list_wrap .perfume_list>li{
+    border: 1px solid red;
+    box-sizing: border-box;
+    width: 25%;
+}
+#section .section5 .perfume .perfume_list_wrap .perfume_list>li img{
+    width: 100%;
+}
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
