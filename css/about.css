@@ -170,7 +170,63 @@ body{
   background-color: #9c9c9c;
   padding: 10px;
   cursor: pointer;
+  text-align: center;
 }
+#section .value{
+  width: 1280px;margin: 0 auto;
+}
+#section .value .value_txt{
+  text-align: center;
+  margin-top: 50px;
+}
+
+#section .value_line1{
+  width: 70px;
+
+}
+#section .value_title{
+  font-size: 20pt;
+}
+#section .value_tabmenu{
+  display: flex;
+  justify-content: center;
+}
+#section .tab_bt{
+  width: 50%; 
+  text-align: center;
+}
+#section .tab_bt li{
+  width: 100px; text-align: center;
+  border: 1px solid #000;
+  border-radius: 30px;
+}
+#section .tab_conts{
+  width: 50%;
+}
+#section .tab_conts li img{
+  width: 80%;
+}
+#section .tab_conts li .tab_txt{
+  text-align: center;
+  width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
