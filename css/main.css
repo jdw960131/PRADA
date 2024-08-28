@@ -19,25 +19,97 @@ body{
 /* --------------------------------------------------- */
 #section{
     width: 1280px;
-    margin: 0 auto;
+    margin: 40px auto;
 }
 #section .section2 .discover{
-    
     border: 1px solid black;
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    text-align: center;
 }
-#section .section2 .discover .dis_01>img,
-#section .section2 .discover .dis_04>img{
-    width: 401px;
-    margin-top: 20px;
+#section .section2 .discover .dis:hover img{
+    filter: grayscale(1);
+}
+#section .section2 .discover .dis_01,
+#section .section2 .discover .dis_04{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border: 1px solid red;;
+}
+#section .section2 .discover .dis_01 img,
+#section .section2 .discover .dis_04 img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    transform: scale(1.1);
+}
+#section .section2 .discover .dis_01 .dis_info_01,
+#section .section2 .discover .dis_04 .dis_info_04{
+    display: none;
+}
+#section .section2 .discover .dis_01:hover .dis_info_01,
+#section .section2 .discover .dis_04:hover .dis_info_04{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+/* #section .section2 .discover .dis_01 .dis_info_01>img,
+#section .section2 .discover .dis_04 .dis_info_04>img{
+    position: absolute;
+    left: 0;
+    top: 0;
+} */
+#section .section2 .discover .dis_01 .dis_info_01>p,
+#section .section2 .discover .dis_04 .dis_info_04>p{
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    left: 50%; 
+    bottom: 0px;
+    transform: translateX(-50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.414);
+    padding: 50px 0px;
+    box-sizing: border-box;
+}
+/* --------------------------------------------------- */
+#section .section2 .discover .dis_02,
+#section .section2 .discover .dis_03{
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+    border: 1px solid red;;
+    position: relative;
 }
 #section .section2 .discover .dis_02>img,
 #section .section2 .discover .dis_03>img{
-    width: 850px;
-    margin-top: 20px;
+    width: 100%;
+    object-fit: cover;
+    transform: scale(1.12);
+}
+#section .section2 .discover .dis_02 .dis_info_02,
+#section .section2 .discover .dis_03 .dis_info_03{
+    width: 400px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.414);
+    color: white;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    display: none;
+}
+#section .section2 .discover .dis_02:hover .dis_info_02,
+#section .section2 .discover .dis_03:hover .dis_info_03{
+    display: block;
+}
+#section .section2 .discover .dis_02:hover .dis_info_02>p,
+#section .section2 .discover .dis_03:hover .dis_info_03>p{
+    margin-top: 180px;
 }
 /* --------------------------------------------------- */
 #section .section3 .ready .ready_list{
