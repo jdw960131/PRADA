@@ -17,35 +17,6 @@ body{
     font-style: normal;
 }
 /* --------------------------------------------------- */
-#header .logo{
-    width: 200px;
-    margin: 30px auto;
-}
-#header .logo img{
-    width: 200px;
-}
-#header .gnb_wrap .gnb{
-    width: 1280px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-evenly;
-    border: 1px solid black;
-    box-sizing: border-box;
-}
-#header .gnb_wrap .gnb>li{
-    border: 1px solid black;
-    box-sizing: border-box;
-}
-#header .gnb_wrap .gnb>li>a{
-    font-size: 17px;
-    font-weight: 700;
-}
-#header .gnb_wrap .gnb .sub{
-    margin-top: 15px;
-    border: 1px solid red;
-    box-sizing: border-box;
-}
-/* --------------------------------------------------- */
 #section{
     width: 1280px;
     margin: 0 auto;
@@ -74,8 +45,13 @@ body{
     box-sizing: border-box;
     display: flex;
 }
+#section .section3 .ready .ready_list>li{
+    padding-right: 15px;
+}
 #section .section3 .ready .ready_list>li>a>img{
     width: 200px;
+    height: 300px;
+    object-fit: cover;
 }
 /* --------------------------------------------------- */
 #section .section4 .fine_wrap{
