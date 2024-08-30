@@ -43,12 +43,10 @@ body{
   position: relative;
   /* overflow: hidden; */
 }
-
 #section .sustainable .sus_title{
   font-size: 20pt;
   font-weight: 400;
 }
-
 #section .sustainable .sus_txt{
   margin-top: 20px;
   font-size: 15pt;
@@ -62,25 +60,23 @@ body{
 
 #section .sustainable .sus_arrow .swiper-button-prev{
   position: absolute;
-  top: 0; left:0;
+  top: 150px; right:100px;
   color: #000;
   border: 1px solid red;
 }
 #section .sustainable .sus_arrow .swiper-button-next{
   position: absolute;
-  top:0; left:0;
+  top:150px; right:10px;
   color: #000;
 }
-#section .sustainable .swiper{
-  display: flex; margin-left: 100px;
-  width: 300%; margin-top: 50px;
-}
-#section .sustainable .swiper-wrapper{
-  width: 100%;
-  border: 1px solid blue;
+#section .sustainable .sus_congroup .swiper-wrapper{
+  display: flex; 
+  margin-left: 100px;
+  width: 100%; 
+  margin-top: 100px;
 }
 #section .sustainable .swiper-wrapper .swiper-slide{
-  width: 100%; height: 350px;
+  width: 800px; height: 350px;
   border: 1px solid red;
 }
 #section .sustainable .swiper-slide img{

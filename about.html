@@ -10,9 +10,147 @@
   <script src="https://kit.fontawesome.com/0989f3df13.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/header.css">
 </head>
 <body>
   <div id="header">
+    <div class="logo">
+      <img src="images/logo/logo_black_01.png" alt="프라다 헤더 로고">
+    </div>
+    <div class="gnb_wrap">
+      <ul class="gnb">
+        <li>
+          <a href="">의류</a>
+          <ul class="sub">
+            <li>
+              <a href="">드레스</a>
+            </li>
+            <li>
+              <a href="">니트웨어</a>
+            </li>
+            <li>
+              <a href="">스커트</a>
+            </li>
+            <li>
+              <a href="">셔츠 및 탑</a>
+            </li>
+            <li>
+              <a href="">데님</a>
+            </li>
+            <li>
+              <a href="">티셔츠</a>
+            </li>
+            <li>
+              <a href="">재킷 및 코트</a>
+            </li>
+            <li>
+              <a href="">아우터</a>
+            </li>
+            <li>
+              <a href="">팬츠 및 반바지</a>
+            </li>
+            <li>
+              <a href="">가죽 의류</a>
+            </li>
+            <li>
+              <a href="">파자마 및 언더웨어</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="">가방</a>
+          <ul class="sub">
+            <li>
+              <a href="">메신저백</a>
+            </li>
+            <li>
+              <a href="">백팩 및 벨트백</a>
+            </li>
+            <li>
+              <a href="">토트백</a>
+            </li>
+            <li>
+              <a href="">브리프케이스</a>
+            </li>
+            <li>
+              <a href="">클러치</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="">슈즈</a>
+          <ul class="sub">
+            <li>
+              <a href="">스니커즈</a>
+            </li>
+            <li>
+              <a href="">로퍼</a>
+            </li>
+            <li>
+              <a href="">샌들</a>
+            </li>
+            <li>
+              <a href="">레이스업</a>
+            </li>
+            <li>
+              <a href="">부츠</a>
+            </li>
+            <li>
+              <a href="">아메리카 컵</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="">악세서리</a>
+          <ul class="sub">
+            <li>
+              <a href="">지갑 및 카드홀더</a>
+            </li>
+            <li>
+              <a href="">하이테크 악세서리</a>
+            </li>
+            <li>
+              <a href="">모자 및 장갑</a>
+            </li>
+            <li>
+              <a href="">선글라스</a>
+            </li>
+            <li>
+              <a href="">벨트</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="">파인주얼리</a>
+        </li>
+        <li>
+          <a href="">악세서리</a>
+          <ul class="sub">
+            <li>
+              <a href="">지갑 및 카드홀더</a>
+            </li>
+            <li>
+              <a href="">하이테크 악세서리</a>
+            </li>
+            <li>
+              <a href="">모자 및 장갑</a>
+            </li>
+            <li>
+              <a href="">선글라스</a>
+            </li>
+            <li>
+              <a href="">벨트</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="">PRADA SPHERE</a>
+        </li>
+        <li>
+          <a href="">About</a>
+        </li>
+      </ul>
+    </div>
   </div>
   <div id="section">
     <div class="main">
@@ -27,6 +165,10 @@
         프라다 전략과 가치속에 깊이 뿌리를 내리고 있습니다.<br>
         프라다 그룹의 지속가능성 약속은 '사람', '지구', '문화'에 기여함을 의미합니다.
       </p>
+      <div class="sus_arrow">
+        <div class="arrow_left swiper-button-prev"></div>
+        <div class="arrow_right swiper-button-next"></div>
+      </div>
       <div class="sus_congroup swiper mySwiper">
         <div class="swiper-wrapper">
           <div class ="swiper-slide">
@@ -41,10 +183,6 @@
             <img src="images/sub_enviro.jpg" alt="환경">
             <p class="sus_name"><span>03</span>환경</p>
           </div>
-        </div>
-        <div class="sus_arrow">
-          <div class="arrow_left swiper-button-prev"></div>
-          <div class="arrow_right swiper-button-next"></div>
         </div>
       </div>
   </div>
@@ -218,6 +356,7 @@
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
+      freemode:true
     });
   </script>
 </body>
