@@ -11,7 +11,9 @@ body{
   font-weight: weight;
   font-style: normal;
 }
+
 /* ------------------section------------------ */
+
 #section{
   width: 100%;
 }
@@ -36,9 +38,10 @@ body{
 
 #section .sustainable{   
   width: calc(100% - 640px);
-  border: 1px solid coral;
+  border: 1px solid yellowgreen;
   margin: 0 auto;
-  overflow: hidden;
+  position: relative;
+  /* overflow: hidden; */
 }
 
 #section .sustainable .sus_title{
@@ -54,29 +57,39 @@ body{
 
 #section .sustainable .sus_arrow{
   display: flex;
-  justify-content: right;
-}
-#section .sustainable .sus_arrow i{
-  font-size: 25pt; margin: 10px;
-}
-#section .sustainable .sus_arrow .arrow_left i{
-  color: #9c9c9c;
+  justify-content: space-around;
 }
 
-#section .sustainable .sus_congroup{
+#section .sustainable .sus_arrow .swiper-button-prev{
+  position: absolute;
+  top: 0; left:0;
+  color: #000;
+  border: 1px solid red;
+}
+#section .sustainable .sus_arrow .swiper-button-next{
+  position: absolute;
+  top:0; left:0;
+  color: #000;
+}
+#section .sustainable .swiper{
   display: flex; margin-left: 100px;
-  width: 2100px; margin-top: 50px;
+  width: 300%; margin-top: 50px;
 }
-#section .sustainable .sus_congroup li{
-  width: 700px; height: 350px;
+#section .sustainable .swiper-wrapper{
+  width: 100%;
+  border: 1px solid blue;
 }
-#section .sustainable .sus_congroup li img{
+#section .sustainable .swiper-wrapper .swiper-slide{
+  width: 100%; height: 350px;
+  border: 1px solid red;
+}
+#section .sustainable .swiper-slide img{
   width: 640px; height: 300px;
 }
-#section .sustainable .sus_congroup li .sus_name{
+#section .sustainable .swiper-slide .sus_name{
   font-size: 15pt;
 }
-#section .sustainable .sus_congroup li .sus_name span{
+#section .sustainable .swiper-slide .sus_name span{
   margin-right: 10px; font-weight: 600;
 }
 
