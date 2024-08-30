@@ -17,56 +17,103 @@ body{
     font-style: normal;
 }
 /* --------------------------------------------------- */
-#header .logo{
-    width: 200px;
-    margin: 30px auto;
-}
-#header .logo img{
-    width: 200px;
-}
-#header .gnb_wrap .gnb{
-    width: 1280px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-evenly;
-    border: 1px solid black;
-    box-sizing: border-box;
-}
-#header .gnb_wrap .gnb>li{
-    border: 1px solid black;
-    box-sizing: border-box;
-}
-#header .gnb_wrap .gnb>li>a{
-    font-size: 17px;
-    font-weight: 700;
-}
-#header .gnb_wrap .gnb .sub{
-    margin-top: 15px;
-    border: 1px solid red;
-    box-sizing: border-box;
-}
-/* --------------------------------------------------- */
 #section{
     width: 1280px;
-    margin: 0 auto;
+    margin: 40px auto;
 }
 #section .section2 .discover{
-    
     border: 1px solid black;
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    text-align: center;
 }
-#section .section2 .discover .dis_01>img,
-#section .section2 .discover .dis_04>img{
-    width: 401px;
-    margin-top: 20px;
+#section .section2 .discover .dis:hover img{
+    filter: grayscale(1);
+}
+#section .section2 .discover .dis_01,
+#section .section2 .discover .dis_04{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    /* border: 1px solid red;; */
+}
+#section .section2 .discover .dis_01 img,
+#section .section2 .discover .dis_04 img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    transform: scale(1.1);
+}
+#section .section2 .discover .dis_01 .dis_info_01,
+#section .section2 .discover .dis_04 .dis_info_04{
+    display: none;
+}
+#section .section2 .discover .dis_01:hover .dis_info_01,
+#section .section2 .discover .dis_04:hover .dis_info_04{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+/* #section .section2 .discover .dis_01 .dis_info_01>img,
+#section .section2 .discover .dis_04 .dis_info_04>img{
+    position: absolute;
+    left: 0;
+    top: 0;
+} */
+#section .section2 .discover .dis_01 .dis_info_01>p,
+#section .section2 .discover .dis_04 .dis_info_04>p{
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    left: 50%; 
+    bottom: 0px;
+    transform: translateX(-50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.414);
+    padding: 50px 0px;
+    box-sizing: border-box;
+}
+/* --------------------------------------------------- */
+#section .section2 .discover .dis_02,
+#section .section2 .discover .dis_03{
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+    /* border: 1px solid red;; */
+    position: relative;
 }
 #section .section2 .discover .dis_02>img,
 #section .section2 .discover .dis_03>img{
-    width: 850px;
-    margin-top: 20px;
+    width: 100%;
+    object-fit: cover;
+    transform: scale(1.12);
+}
+#section .section2 .discover .dis_02 .dis_info_02,
+#section .section2 .discover .dis_03 .dis_info_03{
+    width: 400px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.414);
+    color: white;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    display: none;
+}
+#section .section2 .discover .dis_02:hover .dis_info_02,
+#section .section2 .discover .dis_03:hover .dis_info_03{
+    display: block;
+}
+#section .section2 .discover .dis_02:hover .dis_info_02>p,
+#section .section2 .discover .dis_03:hover .dis_info_03>p{
+    margin-top: 180px;
+}
+#section .section2 .discover .dis_03,
+#section .section2 .discover .dis_04{
+    margin-top: 50px;
 }
 /* --------------------------------------------------- */
 #section .section3 .ready .ready_list{
@@ -74,13 +121,18 @@ body{
     box-sizing: border-box;
     display: flex;
 }
+#section .section3 .ready .ready_list>li{
+    padding-right: 15px;
+}
 #section .section3 .ready .ready_list>li>a>img{
     width: 200px;
+    height: 300px;
+    object-fit: cover;
 }
 /* --------------------------------------------------- */
 #section .section4 .fine_wrap{
     width: 100%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     box-sizing: border-box;
     display: flex;
 }
@@ -96,12 +148,52 @@ body{
 }
 #section .section4 .fine_wrap .fine_01 button{
     width: 200px;
+    height: 60px;
     font-size: 25px;
-    border-radius: 30px;
+    font-weight: 300;
+    color: #525252;
+    /* border-radius: 30px; */
     padding: 10px 20px;
     margin-top: 50px;
     background-color: #C0DBD3;
     border: none;
+    position: relative;
+}
+#section .section4 .fine_wrap .fine_01 button::before{
+    content: "";
+    display: block;
+    width: 0%;
+    height: 60px;
+    position: absolute;
+    left: 50%; 
+    top: 0px;
+    transform: translateX(-50%);
+    /* border-radius: 30px; */
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    box-sizing: border-box;
+    transition: all 0.2s;
+}
+#section .section4 .fine_wrap .fine_01 button:hover::before{
+    width: 100%;
+}
+#section .section4 .fine_wrap .fine_01 button::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    left: 0px; 
+    top: 50%;
+    transform: translateY(-50%);
+    /* border-radius: 30px; */
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    box-sizing: border-box;
+    transition: all 0.2s;
+}
+#section .section4 .fine_wrap .fine_01 button:hover::after{
+    height: 100%;
 }
 #section .section4 .fine_wrap .fine_02{
     width: 50%;
@@ -114,7 +206,7 @@ body{
 }
 #section .section4 .living_wrap{
     width: 100%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     box-sizing: border-box;
     display: flex;
 }
@@ -138,11 +230,51 @@ body{
 }
 #section .section4 .living_wrap .living_02>button{
     width: 200px;
+    height: 60px;
     font-size: 25px;
-    border-radius: 30px;
+    font-weight: 300;
+    color: #525252;
+    /* border-radius: 30px; */
     padding: 10px 20px;
     margin-top: 50px;
     border: none;
+    position: relative;
+}
+#section .section4 .living_wrap .living_02>button::before{
+    content: "";
+    display: block;
+    width: 0%;
+    height: 60px;
+    position: absolute;
+    left: 50%; 
+    top: 0px;
+    transform: translateX(-50%);
+    /* border-radius: 30px; */
+    border-top: 1px solid #00000074;
+    border-bottom: 1px solid #00000074;
+    box-sizing: border-box;
+    transition: all 0.2s;
+}
+#section .section4 .living_wrap .living_02>button:hover::before{
+    width: 100%;
+}
+#section .section4 .living_wrap .living_02>button::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    left: 0px; 
+    top: 50%;
+    transform: translateY(-50%);
+    /* border-radius: 30px; */
+    border-left: 1px solid #00000074;
+    border-right: 1px solid #00000074;
+    box-sizing: border-box;
+    transition: all 0.2s;
+}
+#section .section4 .living_wrap .living_02>button:hover::after{
+    height: 100%;
 }
 /* --------------------------------------------------- */
 
@@ -156,7 +288,7 @@ body{
 #section .section5 .perfume .perfume_intro{
     display: flex;
     justify-content: space-between;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     box-sizing: border-box;
 }
 #section .section5 .perfume .perfume_intro>img{
@@ -164,7 +296,7 @@ body{
     
 }
 #section .section5 .perfume .perfume_intro>p{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     box-sizing: border-box;
     font-size: 20px;
     line-height: 40px;
@@ -178,20 +310,35 @@ body{
     /* overflow: hidden; */
 }
 #section .section5 .perfume .perfume_list_wrap .perfume_list{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     box-sizing: border-box;
     width: 300%;
     display: flex;
     justify-content: space-between;
 }
-#section .section5 .perfume .perfume_list_wrap .perfume_list>li{
-    border: 1px solid red;
+#section .section5 .perfume .perfume_list_wrap .perfume_list .swiper-slide{
+    /* border: 1px solid red; */
     box-sizing: border-box;
     width: 25%;
     text-align: center;
 }
-#section .section5 .perfume .perfume_list_wrap .perfume_list>li img{
+#section .section5 .perfume .perfume_list_wrap .perfume_list .swiper-slide img{
     width: 100%;
+    /* border: 1px solid blue; */
+
+}
+#section .section5 .perfume .perfume_list_wrap .perfume_list .swiper-slide .type{
+    margin-top: -60px;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+#section .section5 .perfume .perfume_list_wrap .perfume_list .swiper-slide .name{
+    padding-bottom: 20px;
+    color: #525252;
+}
+#section .section5 .perfume .perfume_list_wrap .swiper-button-next,
+#section .section5 .perfume .perfume_list_wrap .swiper-button-prev{
+    color: black;
 }
 #section .section5 .perfume .perfume_bar{
     width: 1920px;
@@ -203,10 +350,18 @@ body{
     z-index: -1;
 }
 /* --------------------------------------------------- */
-#section .section6 .sphere>h1{
+#section .section6 .prada_sphere{
+    display: flex;
+}
+#section .section6 .prada_sphere .sphere{
+    width: 50%;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+#section .section6 .prada_sphere .sphere>h1{
     font-size: 60px;
 }
-#section .section6 .sphere>button{
+#section .section6 .prada_sphere .sphere>button{
     width: 200px;
     height: 40px;
     font-size: 20px;
@@ -216,5 +371,86 @@ body{
     padding: 5px 10px;
     box-sizing: border-box;
 }
-
+#section .section6 .prada_sphere .accodian{
+    width: 400px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+}
+#section .section6 .prada_sphere .accodian .acco_group>li{
+    border-bottom: 1px solid antiquewhite;
+}
+#section .section6 .prada_sphere .accodian .acco_group>li h2{
+    height: 60px;
+    line-height: 60px;
+    padding-left: 30px;
+    cursor: pointer;
+    background-color: orange;
+    border-bottom: 1px solid orange;
+}
+#section .section6 .prada_sphere .accodian .acco_group>li .m_txt{
+    padding: 20px;
+    display: none;
+}
+#section .section6 .prada_sphere .accodian .acco_group>li:nth-child(1) .m_txt{
+    display: block;
+}
+#section .section6 .prada_sphere .accodian .acco_group>li .m_title.active{
+    background-color: orangered;
+}
 /* --------------------------------------------------- */
+#footer{
+    background-color: #000;
+    color: white;
+}
+#footer .footer_top{
+    display: flex;
+    border: 1px solid white;
+    box-sizing: border-box;
+}
+#footer .footer_top .logo{
+    padding-right: 100px;
+}
+#footer .footer_top .logo>a>img{
+    width: 200px;
+}
+#footer .footer_top .fnb_wrap{
+    border: 1px solid red;
+    box-sizing: border-box;
+    padding-right: 600px;
+}
+#footer .footer_top .fnb_wrap .fnb{
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid white;
+    box-sizing: border-box;
+}
+#footer .footer_top .fnb_wrap .fnb>li{
+    padding: 70px 0px;
+}
+#footer .footer_top .fnb_wrap .fnb>li>a{
+    color: white;
+}
+#footer .footer_top .sns_wrap .sns{
+    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid white;
+    box-sizing: border-box;
+}
+#footer .footer_top .sns_wrap .sns>li{
+    padding: 70px 0px;
+}
+#footer .footer_top .sns_wrap .sns>li>a>i{
+    color: white;
+    font-size: 23px;
+}
+/* --------------------------------------------------- */
+#footer .footer_bottom{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+#footer .footer_bottom .copyright{
+    color: #686868;
+}

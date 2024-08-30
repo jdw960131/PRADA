@@ -3,7 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>PRADA</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/0989f3df13.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <div id="header">
@@ -92,8 +102,37 @@
     <div class="section1"></div>
     <div class="section2">
       <div class="discover">
-        <div class="dis_01">
-          <img src="images/products/" alt="">
+        <div class="dis dis_01">
+          <img src="images/discover1-1.jpg" alt="">
+          <div class="dis_info_01">
+            <img src="images/discover1-2.jpg" alt="">
+            <p>
+              사피아노 가죽과 혁신적인 리나일론 등 <br>
+              독창적 소재로 제작한 프라다 여성 신상품 백을 <br>
+              우아하고 세련된 모던한 라인으로 선보입니다.
+            </p>
+          </div>
+        </div>
+        <div class="dis dis_02">
+          <img src="images/discover2.jpg" alt="">
+          <div class="dis_info_02">
+            <p>PRADA NEW ARRIVAL</p>
+          </div>
+        </div>
+        <div class="dis dis_03">
+          <img src="images/discover3.jpg" alt="">
+          <div class="dis_info_03">
+            <p>PRADA 2024 F/W COLLECTION</p>
+          </div>
+        </div>
+        <div class="dis dis_04">
+          <img src="images/discover4-1.png" alt="">
+          <div class="dis_info_04">
+            <img src="images/discover4-2.jpg" alt="">
+            <p>
+              PRADA BEAUTY
+            </p>
+          </div>
         </div>
         <div class="dis_02"></div>
         <div class="dis_03"></div>
@@ -105,27 +144,72 @@
         <ul class="ready_list">
           <li>
             <a href="#">
-              <img src="images/index_ready (1).jpg" alt="">
+              <img src="images/index_ready/index_ready_1.jpg" alt="">
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="images/index_ready (2).jpg" alt="">
+              <img src="images/index_ready/index_ready_2.jpg" alt="">
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="images/index_ready (3).jpg" alt="">
+              <img src="images/index_ready/index_ready_3.jpg" alt="">
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="images/index_ready (4).jpg" alt="">
+              <img src="images/index_ready/index_ready_4.jpg" alt="">
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="images/index_ready (5).jpg" alt="">
+              <img src="images/index_ready/index_ready_5.jpg" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/index_ready/index_ready_6.jpg" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/index_ready/index_ready_7.jpg" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/index_ready/index_ready_8.jpg" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/index_ready/index_ready_9.jpg" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/index_ready/index_ready_10.jpg" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/index_ready/index_ready_11.jpg" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/index_ready/index_ready_12.jpg" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/index_ready/index_ready_13.jpg" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/index_ready/index_ready_14.jpg" alt="">
             </a>
           </li>
         </ul>
@@ -172,93 +256,96 @@
             프라다 향수는 기술을 통해 천연 재료를 재창조하여 새로운 후각적 감각을 드러냅니다. <br>
           </p>
         </div>
-        <div class="perfume_list_wrap">
-          <ul class="perfume_list">
-            <li>
+        <div class="perfume_list_wrap swiper mySwiper">
+          <div class="perfume_list swiper-wrapper">
+            <div class="swiper-slide">
               <a href="">
                 <img src="images/products/perfume/perfume_list_05.png" alt="">
                 <p class="type">EAU DE PERFUME </p>
                 <p class="name">루나 로사 블랙</p>
               </a>
-            </li>
-            <li>
+            </div>
+            <div class="swiper-slide">
               <a href="">
                 <img src="images/products/perfume/perfume_list_09.png" alt="">
               </a>
               <p class="type">EAU DE PERFUME </p>
               <p class="name">루나 로사 오션</p>
-            </li>
-            <li>
+            </div>
+            <div class="swiper-slide">
               <a href="">
                 <img src="images/products/perfume/perfume_list_10.png" alt="">
               </a>
               <p class="type">EAU DE PERFUME </p>
               <p class="name">루나 로사</p>
-            </li>
-            <li>
+            </div>
+            <div class="swiper-slide">
               <a href="">
                 <img src="images/products/perfume/perfume_list_11.png" alt="">
               </a>
               <p class="type">EAU DE PERFUME </p>
               <p class="name">루나 로사 카본</p>
-            </li>
-            <li>
+            </div>
+            <div class="swiper-slide">
               <a href="">
                 <img src="images/products/perfume/perfume_list_01.png" alt="">
               </a>
               <p class="type">EAU DE PERFUME </p>
               <p class="name">인퓨전 드 로제</p>
-            </li>
-            <li>
+            </div>
+            <div class="swiper-slide">
               <a href="">
                 <img src="images/products/perfume/perfume_list_06.png" alt="">
               </a>
               <p class="type">EAU DE PERFUME </p>
               <p class="name">인퓨전 드 아망데</p>
-            </li>
-            <li>
+            </div>
+            <div class="swiper-slide">
               <a href="">
                 <img src="images/products/perfume/perfume_list_07.png" alt="">
               </a>
               <p class="type">EAU DE PERFUME </p>
               <p class="name">인퓨전 드 세드레</p>
-            </li>
-            <li>
+            </div>
+            <div class="swiper-slide">
               <a href="">
                 <img src="images/products/perfume/perfume_list_08.png" alt="">
               </a>
               <p class="type">EAU DE PERFUME </p>
               <p class="name">파라독스</p>
-            </li>
-            <li>
+            </div>
+            <div class="swiper-slide">
               <a href="">
                 <img src="images/products/perfume/perfume_list_02.png" alt="">
               </a>
               <p class="type">EAU DE PERFUME </p>
               <p class="name">인퓨전 플루르 드 오랑져</p>
-            </li>
-            <li>
+            </div>
+            <div class="swiper-slide">
               <a href="">
                 <img src="images/products/perfume/perfume_list_03.png" alt="">
               </a>
               <p class="type">EAU DE PERFUME </p>
               <p class="name">인퓨전 드 바닐라</p>
-            </li>
-            <li>
+            </div>
+            <div class="swiper-slide">
               <a href="">
                 <img src="images/products/perfume/perfume_list_04.png" alt="">
               </a>
               <p class="type">EAU DE PERFUME </p>
-              <p class="name">옴므 프라다 윱</p>
-            </li>
-            <li>
+              <p class="name">옴므 프라다 로</p>
+            </div>
+            <div class="swiper-slide">
               <a href="">
                 <img src="images/products/perfume/perfume_list_12.png" alt="">
               </a>
               <p class="type">EAU DE PERFUME </p>
               <p class="name">옴므 프라다</p>
-            </li>
-          </ul>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
         <div class="perfume_bar">
           <!-- 뒤에 회색배경 -->
@@ -266,14 +353,48 @@
       </div>
     </div>
     <div class="section6">
-      <div class="sphere">
-        <h1>PRADA SPHERE</h1>
-        <p>프라다스피어에서 프라다 브랜드 이벤트, 남성 여성 신상품 컬렉션 등 <br>
-          프라다에 대한 최신 뉴스를 확인하세요.</p>
-        <button>
-          <p>View More</p>
-          <p>+</p>
-        </button>
+      <div class="prada_sphere">
+        <div class="sphere">
+          <h1>PRADA SPHERE</h1>
+          <p>프라다스피어에서 프라다 브랜드 이벤트, 남성 여성 신상품 컬렉션 등 <br>
+            프라다에 대한 최신 뉴스를 확인하세요.</p>
+          <button>
+            <p>View More</p>
+            <p>+</p>
+          </button>
+
+          <div class="accodian">
+            <ul class="acco_group">
+              <li>
+                <h2 class="m_title active">MENU_1</h2>
+                <p class="m_txt">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos excepturi sunt sed. Voluptatem quam nam nostrum praesentium possimus quaerat molestiae maxime incidunt quia? Numquam soluta, possimus fuga ea iste omnis.
+                </p>
+              </li>
+              <li>
+                <h2 class="m_title">MENU_2</h2>
+                <p class="m_txt">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos excepturi sunt sed. Voluptatem quam nam nostrum praesentium possimus quaerat molestiae maxime incidunt quia? Numquam soluta, possimus fuga ea iste omnis.
+                </p>
+              </li>
+              <li>
+                <h2 class="m_title">MENU_3</h2>
+                <p class="m_txt">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos excepturi sunt sed. Voluptatem quam nam nostrum praesentium possimus quaerat molestiae maxime incidunt quia? Numquam soluta, possimus fuga ea iste omnis.
+                </p>
+              </li>
+              <li>
+                <h2 class="m_title">MENU_4</h2>
+                <p class="m_txt">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos excepturi sunt sed. Voluptatem quam nam nostrum praesentium possimus quaerat molestiae maxime incidunt quia? Numquam soluta, possimus fuga ea iste omnis.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        
+
         <div class="thumbnail_gallery">
           <ul class="thumbnail">
             <li>
@@ -284,6 +405,95 @@
       </div>
     </div>
   </div>
-  <div id="footer"></div>
+  <div id="footer">
+    <div class="footer_top">
+      <div class="logo">
+        <a href="">
+          <img src="images/logo/logo_white_01.png" alt="프라다 로고">
+        </a>
+      </div>
+      <div class="fnb_wrap">
+        <ul class="fnb">
+          <li>
+            <a href="#">고객센터</a>
+          </li>
+          <li>
+            <a href="#">이용약관</a>
+          </li>
+          <li>
+            <a href="#">계열사</a>
+          </li>
+          <li>
+            <a href="#">자주묻는질문</a>
+          </li>
+          <li>
+            <a href="#">매장찾기</a>
+          </li>
+        </ul>
+      </div>
+      <div class="sns_wrap">
+        <ul class="sns">
+          <li>
+            <a href="">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer_bottom">
+      <div class="copyright">
+        <p>©PRADA 2007 - 2024 | Tax registration number is 213-86-18599</p>
+      </div>
+      <div class="nations">
+        <p>ship to</p>
+        <img src="" alt="">
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    let swiper = new Swiper(".mySwiper", {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  <script>
+    $(document).ready(function(){
+      $(".m_title").click(function(){
+        if($(this).hasClass("active")){
+          $(".m_title").removeClass("active").siblings().slideUp();  
+          //.m_txt를 지칭하는 것임
+        }else{
+          $(".m_title").removeClass("active").siblings().slideUp();  
+          $(this).addClass("active").siblings().slideDown();
+        };
+        
+      });
+    });
+  </script>
 </body>
 </html>
