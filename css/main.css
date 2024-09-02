@@ -18,11 +18,40 @@ body{
 }
 /* --------------------------------------------------- */
 #section{
+    /* width: 1280px;
+    margin: 0px auto; */
+}
+/* --------------------------------------------------- */
+#section .section1{
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+}
+/* --------------------------------------------------- */
+#section .section2{
     width: 1280px;
-    margin: 40px auto;
+    margin: 0px auto;
+}
+#section .section2 .discover_title{
+    margin-top: 150px;
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+#section .section2 .discover_title>h1{
+    font-weight: 500;
+}
+#section .section2 .discover_title .line{
+    width: 1350px;
+    height: 2px;
+    margin-top: 25px;
+    margin-right: -320px;
+    background-color: #0000007c;
 }
 #section .section2 .discover{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
@@ -116,7 +145,17 @@ body{
     margin-top: 50px;
 }
 /* --------------------------------------------------- */
-#section .section3 .ready .ready_list{
+#section .section3{
+    margin-top: 150px;
+}
+#section .section3 .ready_title{
+    /* border: 1px solid black; */
+    text-align: center;
+}
+#section .section3 .ready_title>h1{
+    font-weight: 500;
+}
+/* #section .section3 .ready .ready_list{
     border: 1px solid black;
     box-sizing: border-box;
     display: flex;
@@ -128,8 +167,47 @@ body{
     width: 200px;
     height: 300px;
     object-fit: cover;
+} */
+#section .section3 .wrap{
+    width: 640px; height: 200px;
+    margin: 150px auto;            
+    /* border:3px solid red; */
+    overflow: hidden;
+}
+#section .section3 .wrap{
+    width: 100%; height: 288px;
+    margin: 150px auto;            
+    /* border:3px solid red; */
+    overflow: hidden;
+}
+#section .section3 .wrap .slider{
+    width: 2990px;
+    /* border:3px solid blue; */
+    margin-left: -210px;
+    /* background-color: skyblue; */
+}
+#section .section3 .wrap .box{
+    float:left;
+    width: 180px; height: 150px; margin: 15px;
+    text-align: center; font-size: 5em;
+    line-height: 130px;
+    margin-top: 30px;
+    transition: all 0.3s;
+}
+#section .section3 .wrap .box:nth-child(6){
+    width: 230px; height: 190px;
+    line-height: 180px;
+    margin-top: 0px;
+}
+#section .section3 .wrap .box img{
+    width: 100%;
 }
 /* --------------------------------------------------- */
+#section .section4{
+    width: 1280px;
+    margin: 100px auto;
+}
+
 #section .section4 .fine_wrap{
     width: 100%;
     /* border: 1px solid black; */
@@ -277,15 +355,32 @@ body{
     height: 100%;
 }
 /* --------------------------------------------------- */
-
-#section .section5 .perfume{
-    position: relative;
+#section .section5 .perfume_title{
+    margin-top: 150px;
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+#section .section5 .perfume_title .line{
+    width: 1400px;
+    height: 2px;
+    margin-top: 25px;
+    margin-right: 0px;
+    background-color: #0000007c;
+}
+#section .section5 .perfume_title>h1{
+    padding-right: 310px;
+    font-weight: 500;
 }
 #section .section5 .perfume hr{
     width: 500px;
     color: red;
 }
 #section .section5 .perfume .perfume_intro{
+    width: 1280px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     /* border: 1px solid black; */
@@ -299,6 +394,7 @@ body{
     /* border: 1px solid black; */
     box-sizing: border-box;
     font-size: 20px;
+    font-weight: 300;
     line-height: 40px;
     text-align: center;
     padding-top: 150px;
@@ -307,6 +403,7 @@ body{
     /* border: 1px solid black; */
     box-sizing: border-box;
     width: 1280px;
+    position: relative;
     /* overflow: hidden; */
 }
 #section .section5 .perfume .perfume_list_wrap .perfume_list{
@@ -332,26 +429,34 @@ body{
     padding-bottom: 20px;
     font-size: 20px;
 }
-#section .section5 .perfume .perfume_list_wrap .perfume_list .swiper-slide .name{
-    padding-bottom: 20px;
+#section .section5 .perfume .perfume_list_wrap .perfume_list .swiper-slide .type
+,#section .section5 .perfume .perfume_list_wrap .perfume_list .swiper-slide .name{
+    padding-bottom: 10px;
     color: #525252;
 }
-#section .section5 .perfume .perfume_list_wrap .swiper-button-next,
-#section .section5 .perfume .perfume_list_wrap .swiper-button-prev{
+#section .section5 .perfume .perfume_list_wrap .swiper-wrapper{
+    /* border: 1px solid black; */
+    height: 500px;
+}
+#section .section5 .perfume .perfume_list_wrap .swiper-pagination-bullet-active{
+    background-color: #67905c;
+}
+#section .section5 .perfume .perfume_list_wrap .swiper-button-next::after,
+#section .section5 .perfume .perfume_list_wrap .swiper-button-prev::after{
     color: black;
+    font-size: 20px;
 }
 #section .section5 .perfume .perfume_bar{
-    width: 1920px;
+    width: 100%;
     height: 200px;
     background-color:#e4e4e444;
-    position: absolute;
-    left: -330px;
-    bottom: 0px;
-    z-index: -1;
+    margin-top: -250px;
 }
 /* --------------------------------------------------- */
 #section .section6{
     display: flex !important;
+    width: 1280px;
+    margin: 100px auto;
 }
 #section .section6 .prada_sphere{
     width: 50%;
@@ -363,27 +468,33 @@ body{
 }
 #section .section6 .prada_sphere .sphere>h1{
     font-size: 60px;
+    font-weight: 500;
 }
 #section .section6 .prada_sphere .sphere>p{
     margin: 40px 0px;
 }
 #section .section6 .prada_sphere .sphere>button{
     width: 200px;
-    height: 40px;
+    height: 45px;
     font-size: 20px;
     background-color: white;
     display: flex;
     justify-content: space-between;
-    padding: 5px 10px;
+    padding: 5px 20px;
     box-sizing: border-box;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
+}
+#section .section6 .prada_sphere .sphere>button:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid #45653e;
 }
 #section .section6 .prada_sphere .accodian{
     width: 400px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 #section .section6 .prada_sphere .accodian .acco_group>li{
-    border-bottom: 1px solid antiquewhite;
+    border-bottom: 1px solid #525252;
 }
 #section .section6 .prada_sphere .accodian .acco_group>li .m_title{
     height: 60px;
@@ -394,6 +505,10 @@ body{
     display: flex;
     justify-content: space-between;
 }
+#section .section6 .prada_sphere .accodian .acco_group>li .m_title:hover{
+    background-color: #52525268;
+    color: white;
+}
 #section .section6 .prada_sphere .accodian .acco_group>li .m_txt{
     padding: 20px;
     display: none;
@@ -402,7 +517,9 @@ body{
     display: block;
 } */
 #section .section6 .prada_sphere .accodian .acco_group>li .m_title.active{
-    background-color: rgba(63, 63, 62, 0.236);
+    background-color: rgb(0, 0, 0);
+    /* background-color: #b9d9eb; */
+    color: white;
 }
 /* --------------------------------------------------- */
 #section .section6 .thumb_gallery{
@@ -434,38 +551,38 @@ body{
     height: 200px;
     margin-left: auto;
     margin-right: auto;
-  }
+}
 
 #section .section6 .thumb_gallery .swiper-slide {
     background-size: cover;
     background-position: center;
-  }
+}
 
-  #section .section6 .thumb_gallery .mySwiper2 {
+#section .section6 .thumb_gallery .mySwiper2 {
     height: 80%;
     width: 100%;
-  }
+}
 
-  #section .section6 .thumb_gallery .mySwiper1 {
+#section .section6 .thumb_gallery .mySwiper1 {
     height: 20%;
     box-sizing: border-box;
     padding: 10px 0;
-  }
+}
 
 #section .section6 .thumb_gallery .mySwiper1 .swiper-slide {
     width: 25%;
     height: 100%;
     opacity: 0.4;
-  }
+}
 
-  #section .section6 .thumb_gallery .mySwiper1 .swiper-slide-thumb-active {
+#section .section6 .thumb_gallery .mySwiper1 .swiper-slide-thumb-active {
     opacity: 1;
-  }
+}
 
-  #section .section6 .thumb_gallery .swiper-slide img {
+#section .section6 .thumb_gallery .swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
+}
 /* --------------------------------------------------- */

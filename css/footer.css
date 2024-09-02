@@ -52,7 +52,7 @@
   /* height: 100px; */
   display: flex;
   justify-content: space-evenly;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   box-sizing: border-box;
 }
 #footer .footer_top .sns_wrap .sns>li{
