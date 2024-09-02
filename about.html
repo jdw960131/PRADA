@@ -10,6 +10,7 @@
   <script src="https://kit.fontawesome.com/0989f3df13.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="css/about.css">
   <link rel="stylesheet" href="css/header.css">
   <script src="../PRADA/js/about.js"></script>
@@ -155,12 +156,18 @@
       </ul>
     </div>
     <div class="ham">
-      <ul class="ham_gnb">
-        <div class="ham_gnb_home">
-          <li>X 닫기</li>
-          <li>장바구니</li>
-        </div>
-        <li>의류
+        <ul class="ham_gnb_home">
+          <li><i class="fa-solid fa-cart-shopping"></i></li>
+          <li><i class="fa-solid fa-user"></i></li>
+          <li><i class="fa-solid fa-heart"></i></li>
+          <li class = "close_bt"><i class="fa-solid fa-x"></i> &nbsp;&nbsp;</li>
+        </ul>
+        <ul class="ham_gnb">
+        <li>
+          <a href="">의류</a>
+          <a href=""><span class="material-symbols-outlined">
+            arrow_right
+            </span></a>
           <ul class="ham_sub">
             <li><a href="">드레스</a></li>
             <li><a href="">니트웨어</a></li>
@@ -175,7 +182,10 @@
             <li><a href="">파자마 및 언더웨어</a></li>
           </ul>
         </li>
-        <li>가방
+        <li><a href="">가방</a>
+          <a href=""><span class="material-symbols-outlined">
+            arrow_right
+            </span></a>
           <ul class="ham_sub">
             <li><a href="">메신저백</a></li>
             <li><a href="">백팩 및 벨트백</a></li>
@@ -184,7 +194,10 @@
             <li><a href="">클러치</a></li>
           </ul>
         </li>
-        <li>슈즈
+        <li><a href="">슈즈</a>
+          <a href=""><span class="material-symbols-outlined">
+            arrow_right
+            </span></a>
           <ul class="ham_sub">
             <li><a href="">스니커즈</a></li>
             <li><a href="">로퍼</a></li>
@@ -194,7 +207,10 @@
             <li><a href="">아메리카 컵</a></li>
           </ul>
         </li>
-        <li>악세서리
+        <li><a href="">악세서리</a>
+          <a href=""><span class="material-symbols-outlined">
+            arrow_right
+            </span></a>
           <ul class="ham_sub">
             <li><a href="">지갑 및 카드 홀더</a></li>
             <li><a href="">하이테크 악세서리</a></li>
@@ -203,11 +219,17 @@
             <li><a href=""></a></li>
           </ul>
         </li>
-        <li>파인주얼리</li>
-        <li>PRADA SPHERE</li>
-        <li>ABOUT</li>
-        <li class = "ham_logo"><img src="images/logo/logo_black_01.png" alt=""></li>
+        <li><a href="">파인주얼리</a></li>
+        <li><a href="">PRADA SPHERE</a></li>
+        <li><a href="">ABOUT</a></li>
       </ul>
+      <ul class="ham_end">
+        <li><i class="fa-brands fa-youtube"></i></li>
+        <li><i class="fa-brands fa-x-twitter"></i></li>
+        <li><i class="fa-brands fa-instagram"></i></li>
+        <li><i class="fa-brands fa-facebook"></i></li>
+      </ul>
+      <div class="ham_logo"><img src="images/logo/logo_black_01.png" alt=""></div>
     </div>
   </div>
   <div id="section">
@@ -320,19 +342,19 @@
         <ul class="renylon_product">
           <li>
             <img src="images/renylon (1).jpg" alt="">
-            <p class="pro_name">clothes</p>
+            <div class="angle"><p class="pro_name">Clothes</p></div>
           </li>
           <li>
             <img src="images/renylon (2).jpg" alt="">
-            <p class="pro_name">Accessories</p>
+            <div class="angle"><p class="pro_name">Acc</p></div>
           </li>
           <li>
             <img src="images/renylon (3).jpg" alt="">
-            <p class="pro_name">Bags</p>
+            <div class="angle"><p class="pro_name">Bags</p></div>
           </li>
           <li>
             <img src="images/renylon (4).jpg" alt="">
-            <p class="pro_name">Hair Accessories</p>
+            <div class="angle"><p class="pro_name">Hair Acc</p></div>
           </li>
         </ul>
       </div>

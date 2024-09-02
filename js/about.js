@@ -12,6 +12,14 @@ $(document).ready(function(){
     asd();
   },7000);
 
+  $("#header .logo .menu").click(function(){
+    $(".ham").stop().animate({"left":"0px"});
+  });
+
+  $("#header .ham .ham_gnb_home .close_bt").click(function(){
+    $(".ham").stop().animate({"left":"-100%"});
+  });
+
 
   function asd(){
     $(".main_img").stop().animate({"margin-top":"-200vh"},1000,function(){

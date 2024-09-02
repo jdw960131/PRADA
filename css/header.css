@@ -82,18 +82,61 @@ body{
 #header .gnb_wrap{
     display: none;
 }
+#header .logo .menu{
+    cursor: pointer;
+}
 #header .ham{
     display: block;
-    width: 30%;
-    height: 100vh;
-    background-color: lightblue;
-    position: absolute;
-    left: 0; top: 0;
-    padding:100px 
+    width: 40%;
+    background-color: rgba(236, 236, 236, 0.951);
+    left: -100%; top: 0;
+    position: fixed;
+    z-index: 3000;
 }
-#header .ham .ham_gnb .ham_gnb_home{
+#header .ham .ham_gnb_home{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid lightgray;
+    padding:80px 50px 0px 50px;
+    position: relative;
+}
+#header .ham .ham_gnb_home li{
+    width: 50px;
+    text-align: center;
+    /* border: 1px solid red; */
+    font-size: 15pt;
+    color: rgb(67, 67, 67);
+    cursor: pointer;
+}
+#header .ham .ham_gnb_home li:hover{
+    color: black;
+}
+#header .ham .ham_gnb_home li:nth-child(4){
+    margin-left: 10px;
+    font-size: 15pt;
+    font-weight: 400;
+    position: absolute;
+    top: 20px;right:0px;
+}
+#header .ham .ham_gnb .ham_gnb_home i{
+    font-size: 20pt;
+}
+#header .ham .ham_gnb li{
+    border-bottom: 1px solid gray;
+    line-height: 75px;
+    font-size: 18pt;
+    font-weight: 200;
     display: flex;
     justify-content: space-between;
+    padding: 0px 50px 0px 50px;
+}
+#header .ham .ham_gnb li:hover{
+    font-weight: 500;
+}
+#header .ham .ham_gnb>li>a>span{
+    /* border: 1px solid blue; */
+    font-size:20pt
 }
 #header .logo .menu{
     display: block;
@@ -108,11 +151,157 @@ body{
     text-align: center;
 }
 #header .ham .ham_gnb .ham_logo img{
-    width: 200px;
+    width: 180px;
+    margin-left: 30px;
+}
+#header .ham .ham_end{
+    display: flex;
+}
+#header .ham .ham_end li{
+    width: 40px;height: 40px;
+    text-align: center;
+    /* border: 1px solid red; */
+    font-size: 20pt;
+    border-radius: 50%;
+    background-color: rgba(167, 167, 167, 0.458);
+    color: rgb(67, 67, 67);
+    margin-left: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+#header .ham .ham_end li:hover{
+    color: black;
+}
+#header .ham .ham_logo{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+    padding:20px 0px 20px 0px;
+    background-color: rgba(189, 189, 189, 0.582);
+}
+#header .ham .ham_logo img{
+    width: 150px;
+    cursor: pointer;
+}
+#header .ham .ham_logo img:hover{
+    filter:invert(100%);
 }
 #header .ham_sub{
     display: none;
 }
 }
 
-@media all and (max-width: 768px){}
+@media all and (max-width: 768px){
+    #header .gnb_wrap{
+        display: none;
+    }
+    #header .logo .menu{
+        cursor: pointer;
+    }
+    #header .ham{
+        display: block;
+        width: 70%;
+        background-color: rgba(236, 236, 236, 0.951);
+        left: -40%; top: 0;
+        position: fixed;
+        z-index: 3000;
+    }
+    #header .ham .ham_gnb_home{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+        border-bottom: 1px solid lightgray;
+        padding:50px 50px 0px 50px;
+        position: relative;
+    }
+    #header .ham .ham_gnb_home li{
+        width: 50px;
+        text-align: center;
+        /* border: 1px solid red; */
+        font-size:10pt;
+        color: rgb(67, 67, 67);
+        cursor: pointer;
+    }
+    #header .ham .ham_gnb_home li:hover{
+        color: black;
+    }
+    #header .ham .ham_gnb_home li:nth-child(4){
+        margin-left: 10px;
+        font-size: 10pt;
+        font-weight: 400;
+        position: absolute;
+        top: 20px;right:0px;
+    }
+    #header .ham .ham_gnb .ham_gnb_home i{
+        font-size: 10pt;
+    }
+    #header .ham .ham_gnb li{
+        border-bottom: 1px solid gray;
+        line-height: 40px;
+        font-size: 10pt;
+        font-weight: 200;
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 50px 0px 50px;
+    }
+    #header .ham .ham_gnb li:hover{
+        font-weight: 500;
+    }
+    #header .ham .ham_gnb>li>a>span{
+        /* border: 1px solid blue; */
+        font-size:15pt
+    }
+    #header .logo .menu{
+        display: block;
+    }
+    #header .logo .menu img{
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        left: 30px; top: 35px;
+    }
+    #header .ham .ham_gnb li{
+        text-align: center;
+    }
+    #header .ham .ham_gnb .ham_logo img{
+        width: 180px;
+        margin-left: 30px;
+    }
+    #header .ham .ham_end{
+        display: flex;
+    }
+    #header .ham .ham_end li{
+        width: 20px;height: 20px;
+        text-align: center;
+        /* border: 1px solid red; */
+        font-size: 10pt;
+        border-radius: 50%;
+        background-color: rgba(167, 167, 167, 0.458);
+        color: rgb(67, 67, 67);
+        margin-left: 10px;
+        margin-top: 15px;
+        cursor: pointer;
+    }
+    #header .ham .ham_end li:hover{
+        color: black;
+    }
+    #header .ham .ham_logo{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 20px;
+        padding:20px 0px 20px 0px;
+        background-color: rgba(189, 189, 189, 0.582);
+    }
+    #header .ham .ham_logo img{
+        width: 80px;
+        cursor: pointer;
+    }
+    #header .ham .ham_logo img:hover{
+        filter:invert(100%);
+    }
+    #header .ham_sub{
+        display: none;
+    }
+}

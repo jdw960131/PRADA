@@ -291,36 +291,42 @@ body{
   justify-content: space-around;
 }
 #section .renylon_conts .renylon_product li{
-  width:45%;
+  width:45%;height: 45%;
   /* height: 100%; */
   position: relative;
-  margin-top: 25px;
   overflow: hidden;
+  /* border: 1px solid red; */
 }
 
 #section .renylon_conts .renylon_product img
 {
-  width: 100%;
+  width: 100%;height: 110%;
   transition: all 0.8s;
 }
-#section .renylon_conts .renylon_product li>p {
-  width: 150px; height:40px;
-  position: absolute; 
-  left: 25%; top:50%;
-  box-sizing: border-box;
+#section .renylon_conts .renylon_product li .angle {
+  width: 0px; height:0px;
+  border-bottom: 150px solid rgba(128, 128, 128, 0.229);
+  border-right: 150px solid rgba(128, 128, 128, 0.229);
+  border-top: 150px solid transparent;
+  border-left: 150px solid transparent;
   color: #fff;
-  background-color: rgb(255,255,255,0.4);
-  padding: 8px;
+  position: absolute;
+  bottom: 0px; right: 0px;
   cursor: pointer;
-  text-align: center;
   display: none;
   transition: all 0.3s;
-  
+}
+#section .renylon_conts .renylon_product li .angle .pro_name{
+  width: 20%;
+  font-size: 25pt;
+  font-weight: 500;
+  position: absolute;
+  right: 50%;bottom: 50%;
 }
 #section .renylon_conts .renylon_product li:hover img{
-  transform:scale(2);
+  transform:scale(1.5);
 }
-#section .renylon_conts .renylon_product li:hover p{
+#section .renylon_conts .renylon_product li:hover .angle{
   display: block;
 }
 
@@ -526,7 +532,7 @@ body{
 @media all and (max-width: 768px){
   #section{
     width: 100%;
-    
+}
 }
 
 
