@@ -14,6 +14,8 @@ body{
 
 .clearFix{content: ""; display: block; clear: both;}
 
+
+
 /* ------------------section------------------ */
 
 #section{
@@ -32,6 +34,7 @@ body{
   margin-top: 20px; font-size: 18pt;
   /* text-decoration: underline; */
 }
+
 /* #section .main .main_banner{
   width: 100vw;
   height: 600px;
@@ -74,7 +77,6 @@ body{
   /* border: 1px solid yellowgreen; */
   margin: 0 auto;
   position: relative;
-  /* overflow: hidden; */
 }
 #section .sustainable .sus_title{
   font-size: 20pt;
@@ -87,23 +89,26 @@ body{
 }
 
 #section .sustainable .sus_arrow{
+  width: 10%;
   display: flex;
-  justify-content: center;
+  position: absolute;
+  right: 0px;top:20%;
 }
 
 #section .sustainable .sus_arrow .swiper-button-prev{
-  position: absolute;
-  top:30%; left: 90%;
+  /* position: absolute;
+  top:30%; left: 90%; */
   color: #000;
   font-size: 5pt;
-  /* border: 1px solid red; */
 }
 #section .sustainable .sus_arrow .swiper-button-prev::after{
   font-size: 20pt;
+  /* color:red; */
 }
 #section .sustainable .sus_arrow .swiper-button-next{
-  position: absolute;
-  top:30%; right: 5%;
+  /* position: absolute;
+  top:30%; right: 5%; */
+
   color: #000;
 }
 #section .sustainable .sus_arrow .swiper-button-next::after{
@@ -197,14 +202,13 @@ body{
 /* ----------------------------------- */
 
 #section .renylon{
-  width: calc(100% - 640px);
+  width: calc(100% - 20%);
   margin: 0 auto;  
 }
 #section .renylon .renylon_intro{
   display: flex;
   margin:200px 0px 100px 0px;
   position: relative;
-
 }
 #section .renylon .renylon_intro .renylon_intro_left{
   width: 50%;
@@ -215,27 +219,33 @@ body{
 }
 #section .renylon .renylon_intro .renylon_intro_right{
   width: 50%;
-  border: 1px solid yellowgreen;
+  /* border: 1px solid yellowgreen; */
+  position: relative;
+}
+#section .renylon .renylon_intro .renylon_intro_right .ecl{
+  width: 100%;
+  height: 50%;
+  /* border: 1px solid green; */
   position: relative;
 }
 #section .renylon .renylon_intro .renylon_intro_right .eclips{
-  width: 20vw; 
+  width: 20vw;
   position: absolute;
-  left: 10%;top: 30%;
+  top: 25%;left: 25%;
 }
 #section .renylon_intro .renylon_intro_right .renylon_title{
+  font-size: 2vw;
   position: absolute;
-  top: 40%;right: 25%;
-  font-size: 25pt;
+  top: 25%;left: 25%;
 }
 #section .renylon_intro .renylon_txt{
   margin: 30px auto;
-  width: 700px;
+  width: 100%;
   text-align: left;
   font-size: 15pt;
   font-weight: 300;
   position: absolute;
-  bottom:0;left:30px;
+  bottom:20px;left:30px;
 }
 #section .renylon_intro .renylon_txt span{
   font-weight: 400;
@@ -246,6 +256,9 @@ body{
 }
 #section .renylon_conts .renylon_left{
   width: 50%;
+}
+#section .renylon_conts .renylon_left img{
+  width: 100%;
 }
 #section .renylon_conts .renylon_left .renylon_detail{
   font-size: 20pt; font-weight: 300;
@@ -279,10 +292,10 @@ body{
 }
 #section .renylon_conts .renylon_product li{
   width:45%;
+  /* height: 100%; */
   position: relative;
   margin-top: 25px;
   overflow: hidden;
-  
 }
 
 #section .renylon_conts .renylon_product img
@@ -315,7 +328,7 @@ body{
 /* ------------------------ */
 
 #section .value{
-  width: calc(100% - 640px);
+  width: calc(100% - 20%);
   margin: 0 auto;
   /* background-color: lightgray; */
 }
@@ -367,7 +380,7 @@ body{
   width: 50%;
   position: relative;
   /* background-color: #525252; */
-  margin-top: 50px;
+  margin-top: 20px;
 }
 #section .tab_conts li{
   width: 100%;
@@ -382,7 +395,7 @@ body{
   display: none;
 }
 #section .tab_conts li img{
-  width: 50%;
+  width: 70%;
 }
 #section .tab_txt{
   text-align: left;
@@ -394,14 +407,19 @@ body{
 
 #section .background{
   margin-top: 200px;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+}
+#section .background .back_banner{
+  width: 100%; height: 100%;
   background-image: url(../images/model/backback.png);
   background-size: cover;
+  background-repeat: no-repeat;
   background-attachment: fixed;
-  width: 100%;
-  height: 500px;
 }
 #section .pradagroup{
-  width: 1280px;
+  width: calc(100%-20%);
   margin: 0 auto;
   margin-top: 100px;
 }
@@ -451,13 +469,65 @@ body{
   margin-top: 100px;
 }
 
-@media all and (min-width:769px) and (max-width:1024px){}
+@media all and (min-width:769px) and (max-width:1024px){
+  #section{
+    width: 100%;
+  }
+  #section .main .main_title{
+    font-size: 23pt; 
+  }
+  #section .main .main_txt{
+    font-size: 11pt;
+  }
+  #section .sustainable{
+    width: 100%;
+  }
+  #section .sustainable .sus_title{
+    font-size: 18pt;
+    margin-left: 20px;
+  }
+  #section .sustainable .sus_txt{
+    font-size: 11pt;
+    margin-left: 20px;
+  }
+  #section .sustainable .swiper-wrapper .swiper-slide-active{
+    width: 500px!important;
+  }
+  #section .change{
+    width: 100%;
+  }
+  #section .change .change_title{
+    font-size: 18pt;
+    margin-right: 20px;
+  }
+  #section .change .change_txt{
+    font-size: 11pt;
+    margin-left: 20px;
+  }
+  #section .renylon{
+    width: 100%;
+  }
+  #section .renylon .renylon_detail{
+    font-size: 13pt;
+  }
+  #section .value{
+    width: 100%;
+  }
+  #section .background{
+    width: 100%;
+  }
+  #section .pradagroup{
+    width: 100%;
+  }
+}
 
 
 
-
-
-@media all and (max-width: 768px){}
+@media all and (max-width: 768px){
+  #section{
+    width: 100%;
+    
+}
 
 
 

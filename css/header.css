@@ -69,4 +69,50 @@ body{
 #header .gnb_wrap .gnb .sub>li>a:hover{
     font-weight: 600;
 }
+
+#header .logo .menu{
+    display: none;
+}
+#header .ham{
+    display: none;
+}
 /* --------------------------------------------------- */
+
+@media all and (min-width:769px) and (max-width:1024px){
+#header .gnb_wrap{
+    display: none;
+}
+#header .ham{
+    display: block;
+    width: 30%;
+    height: 100vh;
+    background-color: lightblue;
+    position: absolute;
+    left: 0; top: 0;
+    padding:100px 
+}
+#header .ham .ham_gnb .ham_gnb_home{
+    display: flex;
+    justify-content: space-between;
+}
+#header .logo .menu{
+    display: block;
+}
+#header .logo .menu img{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 30px; top: 35px;
+}
+#header .ham .ham_gnb li{
+    text-align: center;
+}
+#header .ham .ham_gnb .ham_logo img{
+    width: 200px;
+}
+#header .ham_sub{
+    display: none;
+}
+}
+
+@media all and (max-width: 768px){}
