@@ -391,7 +391,7 @@ body{
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    /* border: 1px solid black; */
+    border: 1px solid black;
     box-sizing: border-box;
 }
 #section .section5 .perfume .perfume_intro>img{
@@ -598,16 +598,21 @@ body{
     object-fit: cover;
 }
 /* --------------------------------------------------- */
-@media all and (min-width: 393px) and (max-width: 1024px){
+@media all and (min-width: 394px) and (max-width: 1024px){
     #section .section1{
         height: 550px;
-        overflow: hidden;
-        border: 1px solid red;
     }
     /* --------------------------------------------------- */
     #section .section2{
         width: 100%;
         overflow: hidden;
+    }
+    #section .section2 .discover_title>h1{
+        margin-left: 100px;
+    }
+    #section .section2 .discover_title .line{
+        width: 700px;
+        margin-right: 0px;
     }
     #section .section2 .discover {
         /* border: 1px solid red; */
@@ -692,9 +697,120 @@ body{
         /* border: 1px solid red; */
     }
 /* --------------------------------------------------- */
-    
+    #section .section5 .perfume_title .line{
+        width: 700px;
+    }
+    #section .section5 .perfume_title>h1{
+        padding-right: 100px;
+    }
+    #section .section5 .perfume .perfume_intro{
+        width: 1024px;
+        padding-right:30px;
+    }
+    #section .section5 .perfume .perfume_intro>p{
+        font-size: 15px;
+    }
+/* --------------------------------------------------- */
+    #section .section5 .perfume .perfume_list_wrap{
+        width: 1024px;
+        /* border: 1px solid red; */
+    }
+    #section .section5 .perfume .perfume_list_wrap .perfume_list .swiper-slide{
+        width: 20px;
+        /* border: 1px solid red; */
+    }
+    #section .section5 .perfume .perfume_list_wrap .swiper-wrapper{
+        height: 350px;
+    }
+    #section .section5 .perfume .perfume_list_wrap .swiper-button-next::after,
+    #section .section5 .perfume .perfume_list_wrap .swiper-button-prev::after{
+        margin-top: 300px;
+    }
+    #section .section5 .perfume .perfume_bar{
+        height: 150px;
+        margin-top: -200px;
+    }
+/* --------------------------------------------------- */
+    #section .section6{
+        width: 1024px;
+    }
+    #section .section6 .prada_sphere{
+        padding-left: 40px;
+    }
+    #section .section6 .prada_sphere .sphere>h1{
+        font-size: 40px;
+        margin-top: 40px;
+    }
+}
+
 /* --------------------------------------------------- */
 @media all and (min-width: 0px) and (max-width: 393px){
+    #section .section1{
+        height: 220px;
+    }
+/* ------------------------------------------- */
+    #section .section2{
+        width: 100%;
+        overflow: hidden;
+    }
+    #section .section2 .discover_title>h1{
+        margin-left: 10px;
+        font-size: 17px;
+        border: 1px solid yellow;
+    }
+    #section .section2 .discover_title .line{
+        width: 300px;
+        margin-right: 0px;
+    }
+    #section .section2 .discover {
+        border: 1px solid yellow;
+        /* height: 300px; */
+        /* flex-direction: column; */
+        display: block;
+    }
+    #section .section2 .discover .dis:hover img{
+        filter: grayscale(0);
+    }
+    #section .section2 .discover .dis_01,
+    #section .section2 .discover .dis_04{
+        display: none;
+    }
+    #section .section2 .discover .dis_02,
+    #section .section2 .discover .dis_03{
+        width: 100%;
+        height: 180px;
+        border: 1px solid green;
+    }
+    #section .section2 .discover .dis_03{
+        margin-top: 20px;
+    }
+    #section .section2 .discover .dis_02 .dis_info_02,
+    #section .section2 .discover .dis_03 .dis_info_03{
+        display: block;
+        height: 30px;
+        line-height: 30px;
+        font-size: 13px;
+    }
+    #section .section2 .discover .dis_02 .dis_info_02{
+        width: 150px;
+        left: 20px;
+        top: 30px;
+        /* border: 1px solid green; */
+
+    }
+    #section .section2 .discover .dis_03 .dis_info_03{
+        width: 200px;
+        right: 10px;
+        top: 100px;
+    }
+    #section .section2 .discover .dis_02:hover .dis_info_02>p,
+    #section .section2 .discover .dis_03:hover .dis_info_03>p{
+        margin-top: 0px;
+    }
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+
     #section .section4{
         width: 100%;
 
@@ -751,5 +867,5 @@ body{
     }
 }
 /* --------------------------------------------------- */
-}
+
 /* --------------------------------------------------- */
