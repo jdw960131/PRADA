@@ -27,8 +27,13 @@ $(document).ready(function(){
         $(".ham_gnb_gr").removeClass("active").siblings().slideUp();
         $(this).addClass("active").siblings().slideDown();
     }
+  });
 
-});
+  // $(".change_congroup .con_front .plus").click(function(){
+  //   let li = $(".change_congroup").index();
+  //   $(".con_back").
+  // });
+
 
   function asd(){
     $(".main_img").stop().animate({"margin-top":"-200vh"},1000,function(){

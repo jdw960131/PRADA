@@ -108,7 +108,6 @@ body{
 #section .sustainable .sus_arrow .swiper-button-next{
   /* position: absolute;
   top:30%; right: 5%; */
-
   color: #000;
 }
 #section .sustainable .sus_arrow .swiper-button-next::after{
@@ -157,25 +156,25 @@ body{
 }
 #section .change .change_congroup{
   width: 100%;
-  height: 600px;
+  height: 500px;
   margin-top: 50px;
   display: flex;
-  text-align: center;
+  justify-content: space-around;
   border: 1px solid red;
 }
 #section .change .change_congroup li{
-  width: 33.333%;
-  height: 100%;
+  width: 100%;
+  height: 500px;
   position: relative;
-  /* border: 1px solid blue; */
+  border: 1px solid blue;
   
 }
 #section .change .change_congroup li .con_front{
   position: relative;
 }
 #section .change .change_congroup li .con_front img{
-  width: 100%; 
-  height: 600px;
+  width: 100%;
+  height: 500px;
   object-fit: cover;
 }
 #section .change .change_congroup li .con_front .plus{
@@ -185,7 +184,7 @@ body{
   background-color:#5252527b;
   border-radius: 30px;
   position: absolute;
-  top:50%;left:45%;
+  top:50%;left:50%;
   cursor: pointer;
 }
 #section .change_congroup li .con_back{
@@ -298,9 +297,9 @@ body{
   /* border: 1px solid red; */
 }
 
-#section .renylon_conts .renylon_product img
+#section .renylon_conts .renylon_product li img
 {
-  width: 100%;height: 110%;
+  width: 100%;height: 100%;
   transition: all 0.8s;
 }
 #section .renylon_conts .renylon_product li .angle {
@@ -460,8 +459,6 @@ body{
   object-fit: cover;
 }
 
-
-
 /* ---------------------------------- */
 
 #section .background{
@@ -529,19 +526,20 @@ body{
 #footer{
   margin-top: 100px;
 }
+/* ------tablet------------------------------------------------- */
 
 @media all and (min-width:769px) and (max-width:1024px){
   #section{
     width: 100%;
   }
   #section .main .main_title{
-    font-size: 23pt; 
+    font-size: 23pt;
   }
   #section .main .main_txt{
     font-size: 11pt;
   }
   #section .sustainable{
-    width: 100%;
+    width:100%;
   }
   #section .sustainable .sus_title{
     font-size: 18pt;
@@ -550,6 +548,9 @@ body{
   #section .sustainable .sus_txt{
     font-size: 11pt;
     margin-left: 20px;
+  }
+  #section .sustainable .sus_arrow{
+    display: none;
   }
   #section .sustainable .swiper-wrapper .swiper-slide-active{
     width: 500px!important;
@@ -566,10 +567,19 @@ body{
     margin-left: 20px;
   }
   #section .renylon{
-    width: 100%;
+    width: calc(100%-10%)
+  }
+  #section .renylon .renylon_intro_right .renylon_txt{
+    font-size: 10pt;
   }
   #section .renylon .renylon_detail{
-    font-size: 13pt;
+    font-size: 8pt;
+  }
+  #section .renylon_product li img{
+    height: 100%;
+  }
+  #section .renylon_product li .angle .pro_name{
+    font-size: 10pt;
   }
   #section .value{
     width: 100%;
@@ -582,11 +592,60 @@ body{
   }
 }
 
-
+/* ---mobile--------------------------------------- */
 
 @media all and (max-width: 768px){
   #section{
     width: 100%;
+}
+#section .main .main_title{
+  font-size: 15pt; 
+}
+#section .main .main_txt{
+  font-size: 10pt;
+}
+#section .sustainable{
+  width: 100%
+}
+#section .sustainable .sus_title{
+  font-size: 13pt;
+  margin-left: 20px;
+}
+#section .sustainable .sus_arrow{
+  display: none;
+}
+#section .sustainable .sus_txt{
+  font-size: 11pt;
+  margin-left: 20px;
+}
+#section .sustainable .swiper-wrapper .swiper-slide-active{
+  width: 500px!important;
+}
+#section .change{
+  width: 100%;
+}
+#section .change .change_title{
+  font-size: 18pt;
+  margin-right: 20px;
+}
+#section .change .change_txt{
+  font-size: 11pt;
+  margin-left: 20px;
+}
+#section .renylon{
+  width: 100%;
+}
+#section .renylon .renylon_detail{
+  font-size: 13pt;
+}
+#section .value{
+  width: 100%;
+}
+#section .background{
+  width: 100%;
+}
+#section .pradagroup{
+  width: 100%;
 }
 }
 
