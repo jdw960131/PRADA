@@ -154,47 +154,71 @@ body{
   font-size: 15pt;
   font-weight: 300;
 }
-#section .change .change_congroup{
+
+#section .change .change_group{
+  margin-top: 100px;
   width: 100%;
-  height: 500px;
-  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+/* #section .change .change_group img{
+  width: 100px;
+} */
+#section .change .change_group>li{
+  width: 100%;
+  height: 300px;
+  /* border: 1px solid blue; */
+  background-color: #5252522e;
+  margin-top: 30px;
+  text-align: left;
+  position: relative;
+}
+#section .change .change_group>li:after{
+  content: "프라다의 가치를 확인해보세요";
+  position: absolute;
+  top: 50%;right: 10%;
+}
+
+#section .change .change_group>li .change_conts{
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: space-around;
-  border: 1px solid red;
-}
-#section .change .change_congroup li{
-  width: 100%;
-  height: 500px;
-  position: relative;
-  border: 1px solid blue;
-  
-}
-#section .change .change_congroup li .con_front{
   position: relative;
 }
-#section .change .change_congroup li .con_front img{
+
+#section .change .change_group>li .change_conts li{
+  width: 50%; height: 100%;
+  /* border: 1px solid red; */
+  overflow: hidden;
+  position: absolute;
+  top: 0;left: 0;
+}
+#section .change .change_group>li .change_conts>li .conts_main{
   width: 100%;
-  height: 500px;
+  height: 100%;
   object-fit: cover;
 }
-#section .change .change_congroup li .con_front .plus{
-  width: 50px; height: 50px;
-  font-size: 30px;
-  color: #fff;
-  background-color:#5252527b;
-  border-radius: 30px;
-  position: absolute;
-  top:50%;left:50%;
-  cursor: pointer;
+#section .change .change_group>li .change_conts>li .letter{
+  width: 100%;
+  height: 50%;
+  border: 1px solid yellow;
+
 }
-#section .change_congroup li .con_back{
-  position: absolute; 
-  left: 0; bottom: -100px;
-  display: none;
-} 
-#section .change_congroup li .con_back .con_txt{
-  margin: 0px 10px 150px 10px; 
-  color: #fff;
+#section .change .change_group>li .change_conts .change_top{
+  z-index: 5;
+  transition: all 5s;
+}
+/* #section .change .change_group>li .change_conts .change_top:hover{
+  transform: translateX(500px);
+} */
+
+#section .change .change_group>li .change_conts .con_txt{
+  width: 100%; height: 50%;
+  box-sizing: border-box;
+  font-size: 13pt;
+  padding: 10%;
+  text-align: center;
 }
 
 
