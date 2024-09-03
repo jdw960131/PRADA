@@ -20,6 +20,15 @@ $(document).ready(function(){
     $(".ham").stop().animate({"left":"-100%"});
   });
 
+  $(".ham_gnb_gr").click(function(){
+    if($(this).hasClass("active")){
+        $(".ham_gnb_gr").removeClass("active").siblings().slideUp();
+    }else{
+        $(".ham_gnb_gr").removeClass("active").siblings().slideUp();
+        $(this).addClass("active").siblings().slideDown();
+    }
+
+});
 
   function asd(){
     $(".main_img").stop().animate({"margin-top":"-200vh"},1000,function(){
