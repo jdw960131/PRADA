@@ -24,4 +24,14 @@ $(document).ready(function(){
     };
     
   });
+
+  $(".nations").click(function(){
+    $(".language").slideToggle();
+  });
+  $(window).click(function(event){
+    if(!$(event.target).closest(".nations").length && !$(event.target).closest(".language").length) {
+      $(".language").slideUp();
+    }
+  });
+
   });
