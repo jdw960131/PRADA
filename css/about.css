@@ -526,18 +526,37 @@ body{
 }
 #section .pradagroup .logo_gr li:first-child:hover{
   background-color: #183b2d;
+  
+}
+#section .pradagroup .logo_gr li:first-child:hover img{
+  filter: invert(100%);
 }
 #section .pradagroup .logo_gr li:nth-child(2):hover{
   background-color: #feb81d;
 }
+/* #section .pradagroup .logo_gr li:nth-child(2):hover img{
+  filter: invert(100%);
+} */
 #section .pradagroup .logo_gr li:nth-child(3):hover{
   background-color: #eab5a5;
+}
+#section .pradagroup .logo_gr li:nth-child(3):hover img{
+  filter: invert(100%);
 }
 #section .pradagroup .logo_gr li:nth-child(4):hover{
   background-color: #b9d9eb;
 }
+#section .pradagroup .logo_gr li:nth-child(4):hover img{
+  filter: invert(100%);
+}
 #section .pradagroup .logo_gr li:nth-child(5):hover{
   background-color: #d22d35;
+}
+#section .pradagroup .logo_gr li:nth-child(5):hover img{
+  filter: invert(100%);
+}
+#section .pradagroup .logo_gr li:nth-child(6):hover img{
+  filter: invert(100%);
 }
 #section .pradagroup .logo_gr li:nth-child(6):hover{
   background-color: #cbdbd3;
