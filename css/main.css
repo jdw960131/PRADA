@@ -25,7 +25,7 @@ body{
     width: 100%;
     height: 800px;
     overflow: hidden;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 /* --------------------------------------------------- */
 #section .section2{
@@ -45,7 +45,7 @@ body{
 }
 #section .section2 .discover_title .line{
     width: 1350px;
-    height: 2px;
+    height: 1px;
     margin-top: 25px;
     margin-right: -320px;
     background-color: #0000007c;
@@ -373,7 +373,7 @@ body{
 }
 #section .section5 .perfume_title .line{
     width: 1400px;
-    height: 2px;
+    height: 1px;
     margin-top: 25px;
     margin-right: 0px;
     background-color: #0000007c;
@@ -391,7 +391,7 @@ body{
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     box-sizing: border-box;
 }
 #section .section5 .perfume .perfume_intro>img{
@@ -752,18 +752,25 @@ body{
     #section .section2{
         width: 100%;
         overflow: hidden;
+        /* border: 1px solid blue; */
+
+    }
+    #section .section2 .discover_title{
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
     #section .section2 .discover_title>h1{
-        margin-left: 10px;
+        margin-left: 20px;
         font-size: 17px;
-        border: 1px solid yellow;
+        /* border: 1px solid yellow; */
     }
     #section .section2 .discover_title .line{
-        width: 300px;
+        width: 270px;
+        margin-top: 15px;
         margin-right: 0px;
     }
     #section .section2 .discover {
-        border: 1px solid yellow;
+        /* border: 1px solid yellow; */
         /* height: 300px; */
         /* flex-direction: column; */
         display: block;
@@ -779,7 +786,7 @@ body{
     #section .section2 .discover .dis_03{
         width: 100%;
         height: 180px;
-        border: 1px solid green;
+        /* border: 1px solid green; */
     }
     #section .section2 .discover .dis_03{
         margin-top: 20px;
@@ -808,47 +815,97 @@ body{
         margin-top: 0px;
     }
 /* ------------------------------------------- */
-/* ------------------------------------------- */
+    #section .section3{
+        margin-top: 20px;
+    }
+    #section .section3 .ready_title>h1{
+        font-size: 17px;
+    }
+    #section .section3 .ready_title>p{
+        display: none;
+    }
+    #section .section3 .wrap{
+        margin: 0 auto;
+        height: 200px;
+        /* border: 1px solid red; */
+    }
+    #section .section3 .wrap .box{
+        width: 80px;
+    }
+    #section .section3 .wrap .box:nth-child(4){
+        width: 100px;
+        margin-top: 20px;
+    }
+    #section .section3 .wrap .box:nth-child(6){
+        width: 80px;
+        margin-top: 30px;
+    }
 /* ------------------------------------------- */
 
     #section .section4{
         width: 100%;
+        margin: 0 auto;
+        /* border: 1px solid red; */
 
     }
     #section .section4 .fine_title{
         display: block;
         text-align: center;
-        border: 1px solid red;
+        margin-bottom: 20px;
+        /* border: 1px solid red; */
     }
     #section .section4 .fine_title>h1{
         font-weight: 500;
+        font-size: 17px;
     }
     #section .section4 .fine_title>p{
-        margin-top: 20px;
-        margin-bottom: 50px;
+        /* margin-top: 20px;
+        margin-bottom: 50px; */
+        display: none;
     }
     #section .section4 .fine_home{
-        height: 600px;
+        height: 200px;
         display: flex;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         overflow: hidden;
     }
     #section .section4 .fine_wrap{
         position: relative;
     }
+    
     #section .section4 .fine_wrap .fine_01
     ,#section .section4 .fine_wrap .fine_02{
         position: absolute;
         left: 0;
         top: 0;
-        width: 550px;
-        height: 550px;
+        width: 200px;
+        height: 200px;
         border-radius: 50%;
-        margin-left: -100px;
+        margin-left: -10px;
+        font-size: 10px;
     }
+    #section .section4 .fine_wrap .fine_01{
+        padding-top: 40px;
+        top: 00px;
+        display: none;
+        z-index: 1;
+    }
+    #section .section4 .fine_wrap .fine_01 button{
+        font-size: 10px;
+        width: 120px;
+        height: 30px;
+        padding: 0px;
+        margin-top: 20px;
+    }
+    #section .section4 .fine_wrap .fine_01 button::before{
+        height: 30px;
+    }
+    /* #section .section4 .fine_wrap .fine_02{
+        z-index: ;
+    } */
     #section .section4 .fine_wrap .fine_02>img{
         width: 100%;
-        margin-top: -300px;
+        margin-top: -150px;
     }
     #section .section4 .living_wrap{
         position: relative;
@@ -856,16 +913,121 @@ body{
     #section .section4 .living_wrap .living_01,
     #section .section4 .living_wrap .living_02{
         position: absolute;
-        width: 550px;
-        height: 550px;
+        width: 200px;
+        height: 200px;
         border-radius: 50%;
-        right: -100px;
+        right: -10px;
         top: 0;
+        font-size: 10px;
     }
     #section .section4 .living_wrap .living_02{
-        z-index: -1;
+        padding-top: 60px;
+        top: 00px;
+        display: none;
+        z-index: 1;
     }
-}
+    #section .section4 .living_wrap .living_02>button{
+        font-size: 12px;
+        width: 120px;
+        height: 30px;
+        padding: 0px;
+        margin-top: 30px;
+    }
+    #section .section4 .living_wrap .living_02>button::before{
+        height: 30px;
+    }
 /* --------------------------------------------------- */
+    #section .section5{
+        /* border: 1px solid green; */
+    }
+    #section .section5 .perfume_title{
+        margin-top: 40px;
+    }
+    #section .section5 .perfume_title .line{
+        width: 270px;
+        margin-top: 15px;
+        margin-right: 0px;
+    }
+    #section .section5 .perfume_title>h1{
+        font-size: 17px;
+        padding-right: 20px;
+    }
+    #section .section5 .perfume .perfume_intro{
+        flex-direction: column;
+        width: 393px;
+        padding-bottom: 50px;
+    }
+    #section .section5 .perfume .perfume_intro>img{
+        width: 250px;
+        margin: 0 auto;
+    }
+    #section .section5 .perfume .perfume_intro>p{
+        font-size: 10px;
+        line-height: 15px;
+        padding-top: 30px;
+    }
+/* --------------------------------------------------- */
+    #section .section5 .perfume .perfume_list_wrap{
+        width: 393px;
+    }
+    #section .section5 .perfume .perfume_list_wrap .perfume_list .swiper-slide .type{
+        margin-top: -10px;
+        font-size: 9px;
+        padding-bottom: 0px;
+    }
+    #section .section5 .perfume .perfume_list_wrap .perfume_list .swiper-slide .name{
+        font-size: 7px;
+        padding-bottom: 0px;
+    }
+    #section .section5 .perfume .perfume_list_wrap .swiper-wrapper{
+        height: 140px;
+    }
+    #section .section5 .perfume .perfume_list_wrap .swiper-pagination-bullet{
+        width: 3px;
+        height: 3px;
+    }
+    #section .section5 .perfume .perfume_list_wrap .swiper-button-next::after,
+    #section .section5 .perfume .perfume_list_wrap .swiper-button-prev::after{
+    display: none;
+    }
+    #section .section5 .perfume .perfume_bar{
+        width: 100%;
+        height: 65px;
+        background-color:#e4e4e444;
+        margin-top: -90px;
+    }
+/* --------------------------------------------------- */
+    #section .section6{
+        width: 393px;
+        height: 500px;
+        /* border: 1px solid green; */
+        margin: 0px;
+        margin-top: 60px;
+    }
+    #section .section6 .prada_sphere{
+        width: 100%;
+    }
+    #section .section6 .prada_sphere .sphere>h1{
+        font-size: 17px;
+        text-align: center;
+        /* border: 1px solid green; */
+    }
+    #section .section6 .prada_sphere .sphere>p{
+        font-size: 10px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    #section .section6 .prada_sphere .sphere>button{
+        display: none;
+    }
+    #section .section6 .prada_sphere .accodian .acco_group>li .m_title>h2{
+        font-size: 13px;
+    }
+    #section .section6 .prada_sphere .accodian .acco_group>li .m_txt{
+        font-size: 10px;
+    }
+    #section .section6 .thumb_gallery{
+        display: none;
+    }
 
-/* --------------------------------------------------- */
+}

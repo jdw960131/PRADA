@@ -33,5 +33,22 @@ $(document).ready(function(){
       $(".language").slideUp();
     }
   });
+});
+$(document).ready(function(){
+  let WinW = $(window).width();
+   if (WinW < 394 ) { //394px 보다 클 경우~
+    $(".fine_02").click(function(){
+      $(".fine_01").stop().fadeIn();
+    })
+    $(".fine_01").click(function(){
+      $(".fine_01").stop().fadeOut();
+    })
 
+    $(".living_01").click(function(){
+      $(".living_02").stop().fadeIn();
+    })
+    $(".living_02").click(function(){
+      $(".living_02").stop().fadeOut();
+    })
+  }
   });
