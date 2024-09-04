@@ -29,14 +29,11 @@ $(document).ready(function(){
     }
   });
 
-$(".ham_gnb_home>li:first-child").click(function(){
-  if($(this).hasClass("run")){
-    $(".ham_gnb_home>li:first-child").removeClass("run");
-  }else{
-    $(".ham_gnb_home>li:first-child").removeClass("run");
-    $(this).addClass("run");
-  }
-});
+  // $(".change_congroup .con_front .plus").click(function(){
+  //   let li = $(".change_congroup").index();
+  //   $(".con_back").
+  // });
+
 
   function asd(){
     $(".main_img").stop().animate({"margin-top":"-200vh"},1000,function(){

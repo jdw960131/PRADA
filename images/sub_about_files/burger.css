@@ -26,36 +26,32 @@ display: none;
 @media all and (max-width: 768px){
 #header .ham{
     display: block;
-    width: 100%;
+    width: 40%;
     height: 100vh;
-    background-color: rgb(248, 248, 248);
-    left: -200%; top: 0;
+    background-color: rgba(236, 236, 236, 0.951);
+    left: -100%; top: 0;
     position: fixed;
     z-index: 3000;
-    overflow-y: scroll;
 }
 #header .ham .ham_gnb_home{
     display: flex;
     justify-content: space-between;
-    /* border-bottom: 1px solid lightgray; */
+    border-bottom: 1px solid lightgray;
     padding:80px 40px 10px 40px;
     position: relative;
 }
 #header .ham .ham_gnb_home>li{
-    width: 100%;
+    width: 300px;
     text-align: left;
     font-size: 15pt;
     color: rgb(122, 122, 122);
     cursor: pointer;
-    transition: all 2s ease-out;
+    transition: all 2s;
 }
-#header .ham .ham_gnb_home li.run{
-    transform: translateX(100%);
-}
-/* #header .ham .ham_gnb_home li:first-child:hover{
+#header .ham .ham_gnb_home li:first-child:hover{
     color: black;
-    transform: translateX(500px);
-} */
+    transform: translateX(100px);
+}
 #header .ham .ham_gnb_home li:nth-child(2){
     margin-left: 10px;
     font-size: 15pt;
@@ -68,13 +64,13 @@ display: none;
     color: black;
 }
 #header .ham .ham_gnb .ham_gnb_home i{
-    font-size: 50pt;
+    font-size: 15pt;
 }
 #header .ham .ham_gnb>li{
-    /* border-bottom: 1px solid gray; */
+    border-bottom: 1px solid gray;
     line-height: 75px;
-    font-size: 20pt;
-    font-weight: 600;
+    font-size: 13pt;
+    font-weight: 200;
     padding: 0px 20px 0px 20px;
 }
 #header .ham .ham_gnb .ham_gnb_gr{
@@ -82,10 +78,10 @@ display: none;
     justify-content: space-between;
 }
 #header .ham .ham_gnb>li .ham_gnb_gr>a:hover{
-    font-weight: 800;
+    font-weight: 500;
 }
 #header .ham .ham_gnb>li>a:hover{
-    font-weight: 800;
+    font-weight: 500;
 }
 #header .ham .ham_gnb>li>a>span{
     /* border: 1px solid blue; */
@@ -150,8 +146,7 @@ display: none;
     width: 100%;
     line-height: 30px;
     padding: 0px 0px 0px 0px;
-    font-size: 12pt;
-    font-weight: 400;
+    font-size: 13pt;
     }
 #header .ham .ham_gnb>li .ham_sub>li a:hover{
     font-weight: 500;

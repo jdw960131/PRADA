@@ -86,14 +86,14 @@ body{
 
 
 @media all and (max-width: 768px){
-    #header .gnb_wrap{
-    display: none;
-}
     #header .logo{
         width: 100px;
     }
     #header .logo .headlg{
-        width: 150px;
+        width: 100px;
+    }
+    #header .logo .menu img{
+        width: 70px;
     }
     
     
