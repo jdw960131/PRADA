@@ -18,11 +18,41 @@ body{
 }
 /* --------------------------------------------------- */
 #section{
+    width: 100%;
+}
+/* --------------------------------------------------- */
+#section .section1{
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    /* border: 1px solid red; */
+}
+/* --------------------------------------------------- */
+#section .section2{
     width: 1280px;
-    margin: 40px auto;
+    margin: 0px auto;
+    overflow: hidden;
+}
+#section .section2 .discover_title{
+    margin-top: 150px;
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+#section .section2 .discover_title>h1{
+    font-weight: 500;
+}
+#section .section2 .discover_title .line{
+    width: 1350px;
+    height: 1px;
+    margin-top: 25px;
+    margin-right: -320px;
+    background-color: #0000007c;
 }
 #section .section2 .discover{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
@@ -35,7 +65,7 @@ body{
 #section .section2 .discover .dis_01,
 #section .section2 .discover .dis_04{
     position: relative;
-    width: 400px;
+    width: 30%;
     height: 400px;
     overflow: hidden;
     /* border: 1px solid red;; */
@@ -66,8 +96,8 @@ body{
 } */
 #section .section2 .discover .dis_01 .dis_info_01>p,
 #section .section2 .discover .dis_04 .dis_info_04>p{
-    width: 400px;
-    height: 200px;
+    width: 100%;
+    /* height: 200px; */
     position: absolute;
     left: 50%; 
     bottom: 0px;
@@ -80,8 +110,8 @@ body{
 /* --------------------------------------------------- */
 #section .section2 .discover .dis_02,
 #section .section2 .discover .dis_03{
-    width: 800px;
-    height: 400px;
+    width: 63%;
+    /* height: 400px; */
     overflow: hidden;
     /* border: 1px solid red;; */
     position: relative;
@@ -94,8 +124,8 @@ body{
 }
 #section .section2 .discover .dis_02 .dis_info_02,
 #section .section2 .discover .dis_03 .dis_info_03{
-    width: 400px;
-    height: 400px;
+    width: 50%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.414);
     color: white;
     position: absolute;
@@ -116,7 +146,22 @@ body{
     margin-top: 50px;
 }
 /* --------------------------------------------------- */
-#section .section3 .ready .ready_list{
+#section .section3{
+    margin-top: 150px;
+}
+#section .section3 .ready_title{
+    /* border: 1px solid black; */
+    text-align: center;
+}
+#section .section3 .ready_title>h1{
+    font-weight: 500;
+}
+#section .section3 .ready_title>p{
+    color: #525252;
+    font-size: 15px;
+    margin-top: 20px;
+}
+/* #section .section3 .ready .ready_list{
     border: 1px solid black;
     box-sizing: border-box;
     display: flex;
@@ -128,8 +173,49 @@ body{
     width: 200px;
     height: 300px;
     object-fit: cover;
+} */
+#section .section3 .wrap{
+    width: 640px; height: 200px;
+    margin: 150px auto;            
+    /* border:3px solid red; */
+    overflow: hidden;
+}
+#section .section3 .wrap{
+    width: 100%; height: 288px;
+    margin: 150px auto;            
+    /* border:3px solid red; */
+    overflow: hidden;
+}
+#section .section3 .wrap .slider{
+    width: 2990px;
+    /* border:3px solid blue; */
+    margin-left: -210px;
+    /* background-color: skyblue; */
+}
+#section .section3 .wrap .box{
+    float:left;
+    width: 180px; height: 150px; margin: 15px;
+    text-align: center; font-size: 5em;
+    line-height: 130px;
+    margin-top: 30px;
+    transition: all 0.3s;
+}
+#section .section3 .wrap .box:nth-child(6){
+    width: 230px; height: 190px;
+    line-height: 180px;
+    margin-top: 0px;
+}
+#section .section3 .wrap .box img{
+    width: 100%;
 }
 /* --------------------------------------------------- */
+#section .section4{
+    width: 1280px;
+    margin: 100px auto;
+}
+#section .section4 .fine_title{
+    display: none;
+}
 #section .section4 .fine_wrap{
     width: 100%;
     /* border: 1px solid black; */
@@ -235,7 +321,7 @@ body{
     font-weight: 300;
     color: #525252;
     /* border-radius: 30px; */
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
     margin-top: 50px;
     border: none;
     position: relative;
@@ -257,6 +343,7 @@ body{
 }
 #section .section4 .living_wrap .living_02>button:hover::before{
     width: 100%;
+    /* left: 0; */
 }
 #section .section4 .living_wrap .living_02>button::after{
     content: "";
@@ -277,15 +364,32 @@ body{
     height: 100%;
 }
 /* --------------------------------------------------- */
-
-#section .section5 .perfume{
-    position: relative;
+#section .section5 .perfume_title{
+    margin-top: 150px;
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+#section .section5 .perfume_title .line{
+    width: 1400px;
+    height: 1px;
+    margin-top: 25px;
+    margin-right: 0px;
+    background-color: #0000007c;
+}
+#section .section5 .perfume_title>h1{
+    padding-right: 310px;
+    font-weight: 500;
 }
 #section .section5 .perfume hr{
     width: 500px;
     color: red;
 }
 #section .section5 .perfume .perfume_intro{
+    width: 1280px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     /* border: 1px solid black; */
@@ -299,6 +403,7 @@ body{
     /* border: 1px solid black; */
     box-sizing: border-box;
     font-size: 20px;
+    font-weight: 300;
     line-height: 40px;
     text-align: center;
     padding-top: 150px;
@@ -307,6 +412,7 @@ body{
     /* border: 1px solid black; */
     box-sizing: border-box;
     width: 1280px;
+    position: relative;
     /* overflow: hidden; */
 }
 #section .section5 .perfume .perfume_list_wrap .perfume_list{
@@ -332,125 +438,597 @@ body{
     padding-bottom: 20px;
     font-size: 20px;
 }
-#section .section5 .perfume .perfume_list_wrap .perfume_list .swiper-slide .name{
-    padding-bottom: 20px;
+#section .section5 .perfume .perfume_list_wrap .perfume_list .swiper-slide .type
+,#section .section5 .perfume .perfume_list_wrap .perfume_list .swiper-slide .name{
+    padding-bottom: 10px;
     color: #525252;
 }
-#section .section5 .perfume .perfume_list_wrap .swiper-button-next,
-#section .section5 .perfume .perfume_list_wrap .swiper-button-prev{
+#section .section5 .perfume .perfume_list_wrap .swiper-wrapper{
+    /* border: 1px solid black; */
+    height: 500px;
+}
+#section .section5 .perfume .perfume_list_wrap .swiper-pagination-bullet-active{
+    background-color: #67905c;
+}
+#section .section5 .perfume .perfume_list_wrap .swiper-button-next::after,
+#section .section5 .perfume .perfume_list_wrap .swiper-button-prev::after{
     color: black;
+    font-size: 20px;
 }
 #section .section5 .perfume .perfume_bar{
-    width: 1920px;
+    width: 100%;
     height: 200px;
     background-color:#e4e4e444;
-    position: absolute;
-    left: -330px;
-    bottom: 0px;
-    z-index: -1;
+    margin-top: -250px;
 }
 /* --------------------------------------------------- */
+#section .section6{
+    display: flex !important;
+    width: 1280px;
+    margin: 100px auto;
+}
 #section .section6 .prada_sphere{
-    display: flex;
+    width: 50%;
 }
 #section .section6 .prada_sphere .sphere{
-    width: 50%;
-    border: 1px solid black;
+    width: 100%;
+    /* border: 1px solid green; */
     box-sizing: border-box;
 }
 #section .section6 .prada_sphere .sphere>h1{
     font-size: 60px;
+    font-weight: 500;
+}
+#section .section6 .prada_sphere .sphere>p{
+    margin: 40px 0px;
 }
 #section .section6 .prada_sphere .sphere>button{
     width: 200px;
-    height: 40px;
+    height: 45px;
     font-size: 20px;
     background-color: white;
     display: flex;
     justify-content: space-between;
-    padding: 5px 10px;
+    padding: 5px 20px;
     box-sizing: border-box;
+    margin-bottom: 100px;
+}
+#section .section6 .prada_sphere .sphere>button:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid #45653e;
 }
 #section .section6 .prada_sphere .accodian{
     width: 400px;
-    margin: 0 auto;
-    background-color: antiquewhite;
+    /* margin: 0 auto; */
 }
 #section .section6 .prada_sphere .accodian .acco_group>li{
-    border-bottom: 1px solid antiquewhite;
+    border-bottom: 1px solid #525252;
 }
-#section .section6 .prada_sphere .accodian .acco_group>li h2{
+#section .section6 .prada_sphere .accodian .acco_group>li .m_title{
     height: 60px;
     line-height: 60px;
-    padding-left: 30px;
+    padding: 0px 30px;
     cursor: pointer;
-    background-color: orange;
-    border-bottom: 1px solid orange;
+    border-bottom: 1px solid #525252;
+    display: flex;
+    justify-content: space-between;
+}
+#section .section6 .prada_sphere .accodian .acco_group>li .m_title:hover{
+    background-color: #52525268;
+    color: white;
 }
 #section .section6 .prada_sphere .accodian .acco_group>li .m_txt{
     padding: 20px;
     display: none;
 }
-#section .section6 .prada_sphere .accodian .acco_group>li:nth-child(1) .m_txt{
+/* #section .section6 .prada_sphere .accodian .acco_group>li:nth-child(1) .m_txt{
     display: block;
-}
+} */
 #section .section6 .prada_sphere .accodian .acco_group>li .m_title.active{
-    background-color: orangered;
+    background-color: rgb(0, 0, 0);
+    /* background-color: #b9d9eb; */
+    color: white;
 }
 /* --------------------------------------------------- */
-#footer{
-    background-color: #000;
-    color: white;
+#section .section6 .thumb_gallery{
+    width: 50%;
+    /* border: 1px solid red; */
+    box-sizing: border-box;
 }
-#footer .footer_top{
+#section .section6 .thumb_gallery .swiper {
+    width: 100%;
+    height: 100%;
+}
+#section .section6 .thumb_gallery .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
     display: flex;
-    border: 1px solid white;
+    justify-content: center;
+    align-items: center;
+}
+
+#section .section6 .thumb_gallery .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#section .section6 .thumb_gallery .swiper {
+    width: 100%;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#section .section6 .thumb_gallery .swiper-slide {
+    background-size: cover;
+    background-position: center;
+}
+
+#section .section6 .thumb_gallery .mySwiper2 {
+    height: 80%;
+    width: 100%;
+}
+
+#section .section6 .thumb_gallery .mySwiper1 {
+    height: 20%;
     box-sizing: border-box;
+    padding: 10px 0;
 }
-#footer .footer_top .logo{
-    padding-right: 100px;
+
+#section .section6 .thumb_gallery .mySwiper1 .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+    position: relative;
 }
-#footer .footer_top .logo>a>img{
-    width: 200px;
+#section .section6 .thumb_gallery .mySwiper1 .swiper-slide>p{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.336);
 }
-#footer .footer_top .fnb_wrap{
-    border: 1px solid red;
-    box-sizing: border-box;
-    padding-right: 600px;
+#section .section6 .thumb_gallery .mySwiper1 .swiper-slide-thumb-active {
+    opacity: 1;
 }
-#footer .footer_top .fnb_wrap .fnb{
-    width: 500px;
-    display: flex;
-    justify-content: space-evenly;
-    border: 1px solid white;
-    box-sizing: border-box;
-}
-#footer .footer_top .fnb_wrap .fnb>li{
-    padding: 70px 0px;
-}
-#footer .footer_top .fnb_wrap .fnb>li>a{
-    color: white;
-}
-#footer .footer_top .sns_wrap .sns{
-    width: 200px;
-    display: flex;
-    justify-content: space-evenly;
-    border: 1px solid white;
-    box-sizing: border-box;
-}
-#footer .footer_top .sns_wrap .sns>li{
-    padding: 70px 0px;
-}
-#footer .footer_top .sns_wrap .sns>li>a>i{
-    color: white;
-    font-size: 23px;
+
+#section .section6 .thumb_gallery .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 /* --------------------------------------------------- */
-#footer .footer_bottom{
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 20px;
+@media all and (min-width: 394px) and (max-width: 1024px){
+    #section .section1{
+        height: 550px;
+    }
+    /* --------------------------------------------------- */
+    #section .section2{
+        width: 100%;
+        overflow: hidden;
+    }
+    #section .section2 .discover_title>h1{
+        margin-left: 100px;
+    }
+    #section .section2 .discover_title .line{
+        width: 700px;
+        margin-right: 0px;
+    }
+    #section .section2 .discover {
+        /* border: 1px solid red; */
+        flex-direction: column;
+    }
+    #section .section2 .discover .dis:hover img{
+        filter: grayscale(0);
+    }
+    #section .section2 .discover .dis_01,
+    #section .section2 .discover .dis_04{
+        display: none;
+        
+    }
+    #section .section2 .discover .dis_02,
+    #section .section2 .discover .dis_03{
+        width: 100%;
+        height: 400px;
+        /* border: 1px solid green; */
+    }
+    #section .section2 .discover .dis_02 .dis_info_02,
+    #section .section2 .discover .dis_03 .dis_info_03{
+        display: block;
+        height: 50px;
+        line-height: 50px;
+        font-size: 20px;
+    }
+    #section .section2 .discover .dis_02 .dis_info_02{
+        width: 250px;
+        left: 150px;
+        top: 100px;
+        /* border: 1px solid green; */
+
+    }
+    #section .section2 .discover .dis_03 .dis_info_03{
+        width: 350px;
+        right: 100px;
+        top: 100px;
+    }
+    #section .section2 .discover .dis_02:hover .dis_info_02>p,
+    #section .section2 .discover .dis_03:hover .dis_info_03>p{
+        margin-top: 0px;
+    }
+/* --------------------------------------------------- */
+    #section .section3 .wrap{
+        margin-top: 50px;
+    }
+    #section .section3 .wrap .box:nth-child(6){
+        width: 180px; height: 150px;
+        line-height: 180px;
+        margin-top: 30px;
+    }
+    #section .section3 .wrap .box:nth-child(4){
+        width: 230px; height: 190px;
+        line-height: 180px;
+        margin-top: 0px;
+    }
+/* --------------------------------------------------- */
+    #section .section4{
+        width: 100%;
+    }
+    #section .section4 .fine_wrap .fine_01{
+        height: 512px;
+        /* border: 1px solid red; */
+        font-size: 18px;
+    }
+    #section .section4 .fine_wrap .fine_02{
+        width: 50%;
+        height: 512px;
+        overflow: hidden;
+    }
+    #section .section4 .fine_wrap .fine_02>img{
+        width: 100%;
+        margin-top: -300px;
+    }
+    #section .section4 .living_wrap .living_01{
+        height: 512px;
+        /* border: 1px solid red; */
+    }
+    #section .section4 .living_wrap .living_02{
+        height: 512px;
+        font-size: 18px;
+        /* border: 1px solid red; */
+    }
+/* --------------------------------------------------- */
+    #section .section5 .perfume_title .line{
+        width: 700px;
+    }
+    #section .section5 .perfume_title>h1{
+        padding-right: 100px;
+    }
+    #section .section5 .perfume .perfume_intro{
+        width: 1024px;
+        padding-right:30px;
+    }
+    #section .section5 .perfume .perfume_intro>p{
+        font-size: 15px;
+    }
+/* --------------------------------------------------- */
+    #section .section5 .perfume .perfume_list_wrap{
+        width: 1024px;
+        /* border: 1px solid red; */
+    }
+    #section .section5 .perfume .perfume_list_wrap .perfume_list .swiper-slide{
+        width: 20px;
+        /* border: 1px solid red; */
+    }
+    #section .section5 .perfume .perfume_list_wrap .swiper-wrapper{
+        height: 350px;
+    }
+    #section .section5 .perfume .perfume_list_wrap .swiper-button-next::after,
+    #section .section5 .perfume .perfume_list_wrap .swiper-button-prev::after{
+        margin-top: 300px;
+    }
+    #section .section5 .perfume .perfume_bar{
+        height: 150px;
+        margin-top: -200px;
+    }
+/* --------------------------------------------------- */
+    #section .section6{
+        width: 1024px;
+    }
+    #section .section6 .prada_sphere{
+        padding-left: 40px;
+    }
+    #section .section6 .prada_sphere .sphere>h1{
+        font-size: 40px;
+        margin-top: 40px;
+    }
 }
-#footer .footer_bottom .copyright{
-    color: #686868;
+
+/* --------------------------------------------------- */
+@media all and (min-width: 0px) and (max-width: 393px){
+    #section .section1{
+        height: 220px;
+    }
+/* ------------------------------------------- */
+    #section .section2{
+        width: 100%;
+        overflow: hidden;
+        /* border: 1px solid blue; */
+
+    }
+    #section .section2 .discover_title{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #section .section2 .discover_title>h1{
+        margin-left: 20px;
+        font-size: 17px;
+        /* border: 1px solid yellow; */
+    }
+    #section .section2 .discover_title .line{
+        width: 270px;
+        margin-top: 15px;
+        margin-right: 0px;
+    }
+    #section .section2 .discover {
+        /* border: 1px solid yellow; */
+        /* height: 300px; */
+        /* flex-direction: column; */
+        display: block;
+    }
+    #section .section2 .discover .dis:hover img{
+        filter: grayscale(0);
+    }
+    #section .section2 .discover .dis_01,
+    #section .section2 .discover .dis_04{
+        display: none;
+    }
+    #section .section2 .discover .dis_02,
+    #section .section2 .discover .dis_03{
+        width: 100%;
+        height: 180px;
+        /* border: 1px solid green; */
+    }
+    #section .section2 .discover .dis_03{
+        margin-top: 20px;
+    }
+    #section .section2 .discover .dis_02 .dis_info_02,
+    #section .section2 .discover .dis_03 .dis_info_03{
+        display: block;
+        height: 30px;
+        line-height: 30px;
+        font-size: 13px;
+    }
+    #section .section2 .discover .dis_02 .dis_info_02{
+        width: 150px;
+        left: 20px;
+        top: 30px;
+        /* border: 1px solid green; */
+
+    }
+    #section .section2 .discover .dis_03 .dis_info_03{
+        width: 200px;
+        right: 10px;
+        top: 100px;
+    }
+    #section .section2 .discover .dis_02:hover .dis_info_02>p,
+    #section .section2 .discover .dis_03:hover .dis_info_03>p{
+        margin-top: 0px;
+    }
+/* ------------------------------------------- */
+    #section .section3{
+        margin-top: 20px;
+    }
+    #section .section3 .ready_title>h1{
+        font-size: 17px;
+    }
+    #section .section3 .ready_title>p{
+        display: none;
+    }
+    #section .section3 .wrap{
+        margin: 0 auto;
+        height: 200px;
+        /* border: 1px solid red; */
+    }
+    #section .section3 .wrap .box{
+        width: 80px;
+    }
+    #section .section3 .wrap .box:nth-child(4){
+        width: 100px;
+        margin-top: 20px;
+    }
+    #section .section3 .wrap .box:nth-child(6){
+        width: 80px;
+        margin-top: 30px;
+    }
+/* ------------------------------------------- */
+
+    #section .section4{
+        width: 100%;
+        margin: 0 auto;
+        /* border: 1px solid red; */
+
+    }
+    #section .section4 .fine_title{
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+        /* border: 1px solid red; */
+    }
+    #section .section4 .fine_title>h1{
+        font-weight: 500;
+        font-size: 17px;
+    }
+    #section .section4 .fine_title>p{
+        /* margin-top: 20px;
+        margin-bottom: 50px; */
+        display: none;
+    }
+    #section .section4 .fine_home{
+        height: 200px;
+        display: flex;
+        /* border: 1px solid red; */
+        overflow: hidden;
+    }
+    #section .section4 .fine_wrap{
+        position: relative;
+    }
+    
+    #section .section4 .fine_wrap .fine_01
+    ,#section .section4 .fine_wrap .fine_02{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-left: -10px;
+        font-size: 10px;
+    }
+    #section .section4 .fine_wrap .fine_01{
+        padding-top: 40px;
+        top: 00px;
+        display: none;
+        z-index: 1;
+    }
+    #section .section4 .fine_wrap .fine_01 button{
+        font-size: 10px;
+        width: 120px;
+        height: 30px;
+        padding: 0px;
+        margin-top: 20px;
+    }
+    #section .section4 .fine_wrap .fine_01 button::before{
+        height: 30px;
+    }
+    /* #section .section4 .fine_wrap .fine_02{
+        z-index: ;
+    } */
+    #section .section4 .fine_wrap .fine_02>img{
+        width: 100%;
+        margin-top: -150px;
+    }
+    #section .section4 .living_wrap{
+        position: relative;
+    }
+    #section .section4 .living_wrap .living_01,
+    #section .section4 .living_wrap .living_02{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        right: -10px;
+        top: 0;
+        font-size: 10px;
+    }
+    #section .section4 .living_wrap .living_02{
+        padding-top: 60px;
+        top: 00px;
+        display: none;
+        z-index: 1;
+    }
+    #section .section4 .living_wrap .living_02>button{
+        font-size: 12px;
+        width: 120px;
+        height: 30px;
+        padding: 0px;
+        margin-top: 30px;
+    }
+    #section .section4 .living_wrap .living_02>button::before{
+        height: 30px;
+    }
+/* --------------------------------------------------- */
+    #section .section5{
+        /* border: 1px solid green; */
+    }
+    #section .section5 .perfume_title{
+        margin-top: 40px;
+    }
+    #section .section5 .perfume_title .line{
+        width: 270px;
+        margin-top: 15px;
+        margin-right: 0px;
+    }
+    #section .section5 .perfume_title>h1{
+        font-size: 17px;
+        padding-right: 20px;
+    }
+    #section .section5 .perfume .perfume_intro{
+        flex-direction: column;
+        width: 393px;
+        padding-bottom: 50px;
+    }
+    #section .section5 .perfume .perfume_intro>img{
+        width: 250px;
+        margin: 0 auto;
+    }
+    #section .section5 .perfume .perfume_intro>p{
+        font-size: 10px;
+        line-height: 15px;
+        padding-top: 30px;
+    }
+/* --------------------------------------------------- */
+    #section .section5 .perfume .perfume_list_wrap{
+        width: 393px;
+    }
+    #section .section5 .perfume .perfume_list_wrap .perfume_list .swiper-slide .type{
+        margin-top: -10px;
+        font-size: 9px;
+        padding-bottom: 0px;
+    }
+    #section .section5 .perfume .perfume_list_wrap .perfume_list .swiper-slide .name{
+        font-size: 7px;
+        padding-bottom: 0px;
+    }
+    #section .section5 .perfume .perfume_list_wrap .swiper-wrapper{
+        height: 140px;
+    }
+    #section .section5 .perfume .perfume_list_wrap .swiper-pagination-bullet{
+        width: 3px;
+        height: 3px;
+    }
+    #section .section5 .perfume .perfume_list_wrap .swiper-button-next::after,
+    #section .section5 .perfume .perfume_list_wrap .swiper-button-prev::after{
+    display: none;
+    }
+    #section .section5 .perfume .perfume_bar{
+        width: 100%;
+        height: 65px;
+        background-color:#e4e4e444;
+        margin-top: -90px;
+    }
+/* --------------------------------------------------- */
+    #section .section6{
+        width: 393px;
+        height: 500px;
+        /* border: 1px solid green; */
+        margin: 0px;
+        margin-top: 60px;
+    }
+    #section .section6 .prada_sphere{
+        width: 100%;
+    }
+    #section .section6 .prada_sphere .sphere>h1{
+        font-size: 17px;
+        text-align: center;
+        /* border: 1px solid green; */
+    }
+    #section .section6 .prada_sphere .sphere>p{
+        font-size: 10px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    #section .section6 .prada_sphere .sphere>button{
+        display: none;
+    }
+    #section .section6 .prada_sphere .accodian .acco_group>li .m_title>h2{
+        font-size: 13px;
+    }
+    #section .section6 .prada_sphere .accodian .acco_group>li .m_txt{
+        font-size: 10px;
+    }
+    #section .section6 .thumb_gallery{
+        display: none;
+    }
+
 }
