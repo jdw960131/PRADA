@@ -19,16 +19,19 @@ body{
 /* --------------------------------------------------- */
 
 #header .logo{
-    width: 150px;
-    margin: 30px auto;
-}
-#header .logo .menu{
     width: 100%;
+    margin: 30px auto;
+    text-align: center;
+}
+#header .logo .headlg{
+    width: 200px;
     margin: 0 auto;
-    display: none;
+    text-align: center;
     cursor: pointer;
 }
-
+#header .logo .menu{
+    display: none;
+}
 #header .gnb_wrap{
     position: relative;
     background-color: white;
@@ -88,22 +91,25 @@ body{
         position: relative;
         text-align: center;
         display: flex;
+        justify-content: center;
     }
     #header .logo .headlg{
-        width: 30%; 
+        width: 150px; 
         margin: 0 auto;
     }
     #header .logo .menu{
         border: 1px solid blue;
         width: 100px;
         height: 50px;
-        position: absolute;
-        left: 0px; top: 0px;
+
 
     }
         #header .logo .menu img{
-        width: 100%
-
+        width: 100%;
+        height: 100%;
+        border: 1px solid green;
+        /* position: absolute;
+        left: 0px; top: -100px; */
     }
 
     
