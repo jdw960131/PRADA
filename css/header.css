@@ -93,7 +93,7 @@ body{
         display: flex;
         justify-content: center;
     }
-    #header .logo .headlg{
+    #header .logo>a .headlg{
         width: 150px; 
         margin: 0 auto;
     }
