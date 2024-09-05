@@ -48,9 +48,12 @@ display: none;
     color: rgb(122, 122, 122);
     cursor: pointer;
     transition: all 2s ease-out;
+    /* border: 1px solid red; */
 }
 #header .ham .ham_gnb_home li.run{
     transform: translateX(100%);
+    width: 20px;
+    /* border: 1px solid red; */
 }
 /* #header .ham .ham_gnb_home li:first-child:hover{
     color: black;
