@@ -96,12 +96,18 @@ display: none;
 }
 #header .logo .menu{
     display: block;
+    border: 1px solid blue;
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
 }
 #header .logo .menu img{
     width: 40px;
     height: 40px;
-    position: absolute;
-    left: 30px; top: 35px;
+    margin-top: 5px;
+    border: 1px solid green;
 }
 #header .ham .ham_gnb>li{
     text-align: left;
