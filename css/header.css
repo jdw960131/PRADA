@@ -73,7 +73,7 @@ body{
 /* --------------------------------------------------- */
 @media all and (min-width: 394px) and (max-width: 1024px) {
     #header .gnb_wrap .gnb{
-        width: 1024px;
+        /* width: 1024px; */
         padding: 0px;
     }
 }

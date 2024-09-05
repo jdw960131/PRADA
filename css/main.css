@@ -31,6 +31,7 @@ body{
 #section .section2{
     width: 1280px;
     margin: 0px auto;
+    overflow: hidden;
 }
 #section .section2 .discover_title{
     margin-top: 150px;
@@ -64,7 +65,7 @@ body{
 #section .section2 .discover .dis_01,
 #section .section2 .discover .dis_04{
     position: relative;
-    width: 400px;
+    width: 30%;
     height: 400px;
     overflow: hidden;
     /* border: 1px solid red;; */
@@ -95,8 +96,8 @@ body{
 } */
 #section .section2 .discover .dis_01 .dis_info_01>p,
 #section .section2 .discover .dis_04 .dis_info_04>p{
-    width: 400px;
-    height: 200px;
+    width: 100%;
+    /* height: 200px; */
     position: absolute;
     left: 50%; 
     bottom: 0px;
@@ -109,8 +110,8 @@ body{
 /* --------------------------------------------------- */
 #section .section2 .discover .dis_02,
 #section .section2 .discover .dis_03{
-    width: 800px;
-    height: 400px;
+    width: 63%;
+    /* height: 400px; */
     overflow: hidden;
     /* border: 1px solid red;; */
     position: relative;
@@ -123,8 +124,8 @@ body{
 }
 #section .section2 .discover .dis_02 .dis_info_02,
 #section .section2 .discover .dis_03 .dis_info_03{
-    width: 400px;
-    height: 400px;
+    width: 50%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.414);
     color: white;
     position: absolute;
