@@ -19,11 +19,18 @@ body{
 /* --------------------------------------------------- */
 
 #header .logo{
-    width: 200px;
+    width: 100%;
     margin: 30px auto;
+    text-align: center;
 }
-#header .logo img{
+#header .logo .headlg{
     width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+}
+#header .logo .menu{
+    display: none;
 }
 #header .gnb_wrap{
     position: relative;
@@ -71,10 +78,6 @@ body{
     font-weight: 600;
 }
 
-#header .logo .menu{
-    display: none;
-    cursor: pointer;
-}
 
 /* --------------------------------------------------- */
 @media all and (min-width: 769px) and (max-width: 1024px) {
@@ -89,10 +92,17 @@ body{
     display: none;
 }
     #header .logo{
-        width: 100px;
+        border: 1px solid red;
+        width: 100%;
+        position: relative;
+        text-align: center;
+        /* display: flex;
+        justify-content: center; */
     }
     #header .logo .headlg{
-        width: 150px;
+        width: 150px; 
+        margin: 0 auto;
+        border: 1px solid black;
     }
     
 }
