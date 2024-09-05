@@ -33,6 +33,7 @@ body{
     display: none;
 }
 #header .gnb_wrap{
+    width: 100%;
     position: relative;
     background-color: white;
 }
@@ -86,17 +87,17 @@ body{
     display: none;
     }
     #header .logo{
-        border: 1px solid red;
+        /* border: 1px solid red; */
         width: 100%;
         position: relative;
         text-align: center;
-        /* display: flex;
-        justify-content: center; */
+        display: flex;
+        justify-content: center;
     }
-    #header .logo .headlg{
+    #header .logo>a .headlg{
         width: 150px; 
         margin: 0 auto;
-        border: 1px solid black;
+        /* border: 1px solid black; */
     }
 }
 /* --------------------------------------------------- */
