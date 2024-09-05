@@ -29,10 +29,6 @@ body{
   color: #434343;
   text-shadow: 2px 2px #ccccccc1;
 }
-/* #section .main .main_title span{
-  font-weight: 500;
-  font-size: 35pt;
-} */
 #section .main .main_txt{
   margin-top: 40px; font-size: 18pt;
   /* text-decoration: underline; */
@@ -67,7 +63,7 @@ body{
 #section .sustainable{   
   width: calc(100% - 640px);
   /* border: 1px solid yellowgreen; */
-  margin: 0 auto;
+  margin: 50px auto;
   position: relative;
 }
 #section .sustainable .sus_title{
@@ -845,11 +841,19 @@ body{
   width: 25%;
   height: 40%;
 }
-#section .renylon .renylon_conts .renylon_product li .angle .pro_name {
-  display: none;
+#section .renylon .renylon_conts .renylon_product li .pro_name{
+  font-size: 15pt;
+  color: black;
+}
+#section .renylon .renylon_conts .renylon_product li .angle{
+  border-bottom: 90px solid rgba(128, 128, 128, 0.229);
+  border-right: 90px solid rgba(128, 128, 128, 0.229);
+  border-top: 90px solid transparent;
+  border-left: 90px solid transparent;
 }
 #section .value{
   width: 100%;
+  /* border: 1px solid red; */
 }
 #section .value .value_txt{
   width: 100%;
@@ -863,10 +867,17 @@ body{
 }
 #section .value .value_tabmenu .tab_bt{
   width: 100%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
-  border : 1px solid red
+  /* border : 1px solid red; */
 }
+#section .value .value_tabmenu .tab_bt>li{
+  width: 40px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 #section .value .value_tabmenu .tab_bt>li p{
   width: 40px; height: 40px;
   border-radius: 50%;
@@ -878,20 +889,40 @@ body{
 #section .value .value_tabmenu .tab_conts>li .tab_title{
   width: 100%; text-align: center;
   font-size: 12pt;
-  border: 1px solid red;
 }
 #section .value .tab_conts .tab_txt{
   font-size: 10pt;
   text-align: center;
 }
 #section .value .tab_conts{
+  width: 100%;
+  height: 500px;
   margin-bottom: 100px;
 }
+#section .value .tab_conts>li .tab_detail>li p{
+  font-size: 10pt;
+}
+#section .value .tab_conts>li .tab_detail>li p span{
+  font-size: 10pt;
+}
+#section .value .tab_conts .tab_detail{
+  justify-content: center;
+}
+#section .value .tab_conts .tab_detail li:nth-child(2){
+  width: 30%;
+}
+#section .value .tab_conts .tab_detail li:nth-child(3){
+  display: none;
+}
 #section .background{
-  width: 100%;
+  display: none;
 }
 #section .pradagroup{
-  width: 100%;
+  width: 100%; 
+  text-align: center;
+}
+#section .pradagroup .pradagroup_title{
+  font-size: 20pt;
 }
 }
 

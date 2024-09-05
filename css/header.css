@@ -19,12 +19,16 @@ body{
 /* --------------------------------------------------- */
 
 #header .logo{
-    width: 200px;
+    width: 150px;
     margin: 30px auto;
 }
-#header .logo img{
-    width: 200px;
+#header .logo .menu{
+    width: 100%;
+    margin: 0 auto;
+    display: none;
+    cursor: pointer;
 }
+
 #header .gnb_wrap{
     position: relative;
     background-color: white;
@@ -70,31 +74,37 @@ body{
     font-weight: 600;
 }
 
-#header .logo .menu{
-    display: none;
-    cursor: pointer;
-}
 
 
 /* --------------------------------------------------- */
-
-@media all and (min-width:769px) and (max-width:1024px){
-/* #header .gnb_wrap{
-    display: none;
-} */
-}
-
 
 @media all and (max-width: 768px){
     #header .gnb_wrap{
     display: none;
 }
     #header .logo{
-        width: 100px;
+        border: 1px solid red;
+        width: 100%;
+        position: relative;
+        text-align: center;
+        display: flex;
     }
     #header .logo .headlg{
-        width: 150px;
+        width: 30%; 
+        margin: 0 auto;
     }
-    
+    #header .logo .menu{
+        border: 1px solid blue;
+        width: 100px;
+        height: 50px;
+        position: absolute;
+        left: 0px; top: 0px;
+
+    }
+        #header .logo .menu img{
+        width: 100%
+
+    }
+
     
 }
