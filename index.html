@@ -8,12 +8,15 @@
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/burger.css">
+  <link rel="stylesheet" href="css/footer.css">
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
+  <script src="js/about.js"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <script src="https://kit.fontawesome.com/0989f3df13.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -152,7 +155,7 @@
           <a href="">PRADA SPHERE</a>
         </li>
         <li>
-          <a href="">About</a>
+          <a href="about.html">About</a>
         </li>
       </ul>
     </div>
@@ -240,8 +243,20 @@
   </div>
   </div>
   <div id="section">
-    <div class="section1"></div>
+    <div class="section1">
+      <div class="vid_banner">
+        <video src="images/index_banner.mp4" 
+        width="100%" height="50%" controls autoplay muted playsinline>
+        </video>
+    </div>
+    </div>
     <div class="section2">
+      <div class="discover_title">
+        <h1>DISCOVER</h1>
+        <div class="line">
+          <!-- line -->
+        </div>
+      </div>
       <div class="discover">
         <div class="dis dis_01">
           <img src="images/discover1-1.jpg" alt="">
@@ -278,112 +293,134 @@
       </div>
     </div>
     <div class="section3">
-      <div class="ready">
-        <ul class="ready_list">
-          <li>
+      <div class="ready_title">
+        <h1>가방</h1>
+        <p>세련된 디자인과 탁월한 기능성의 만남.
+          언제 어디서나 우아함을 더해줄 당신만의 필수 아이템. <br>
+          최고의 장인 정신으로 완성된 이 가방은, 
+          당신의 스타일을 완성하는 마지막 터치가 될 것입니다</p>
+      </div>
+      <div class="wrap">
+        <div id="slider-div" class="slider clearFix">
+          <div class="box bg1">
             <a href="#">
               <img src="images/index_ready/index_ready_1.jpg" alt="">
             </a>
-          </li>
-          <li>
+          </div>
+          <div class="box bg2">
             <a href="#">
               <img src="images/index_ready/index_ready_2.jpg" alt="">
             </a>
-          </li>
-          <li>
+          </div>
+          <div class="box bg3">
             <a href="#">
               <img src="images/index_ready/index_ready_3.jpg" alt="">
             </a>
-          </li>
-          <li>
+          </div>
+          <div class="box bg4">
             <a href="#">
               <img src="images/index_ready/index_ready_4.jpg" alt="">
             </a>
-          </li>
-          <li>
+          </div>
+          <div class="box bg5">
             <a href="#">
               <img src="images/index_ready/index_ready_5.jpg" alt="">
             </a>
-          </li>
-          <li>
+          </div>
+          <div class="box bg6">
             <a href="#">
               <img src="images/index_ready/index_ready_6.jpg" alt="">
             </a>
-          </li>
-          <li>
+          </div>
+          <div class="box bg7">
             <a href="#">
               <img src="images/index_ready/index_ready_7.jpg" alt="">
             </a>
-          </li>
-          <li>
+          </div>
+          <div class="box bg8">
             <a href="#">
               <img src="images/index_ready/index_ready_8.jpg" alt="">
             </a>
-          </li>
-          <li>
+          </div>
+          <div class="box bg9">
             <a href="#">
               <img src="images/index_ready/index_ready_9.jpg" alt="">
             </a>
-          </li>
-          <li>
+          </div>
+          <div class="box bg10">
             <a href="#">
               <img src="images/index_ready/index_ready_10.jpg" alt="">
             </a>
-          </li>
-          <li>
+          </div>
+          <div class="box bg11">
             <a href="#">
               <img src="images/index_ready/index_ready_11.jpg" alt="">
             </a>
-          </li>
-          <li>
+          </div>
+          <div class="box bg12">
             <a href="#">
               <img src="images/index_ready/index_ready_12.jpg" alt="">
             </a>
-          </li>
-          <li>
+          </div>
+          <div class="box bg13">
             <a href="#">
               <img src="images/index_ready/index_ready_13.jpg" alt="">
             </a>
-          </li>
-          <li>
+          </div>
+          <div class="box bg14">
             <a href="#">
               <img src="images/index_ready/index_ready_14.jpg" alt="">
             </a>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
     </div>
     <div class="section4">
-      <div class="fine_wrap">
-        <div class="fine_01">
-          <p>
-            프라다에서 100% 인증받은 <br>
-            재생 골드로 제작된 <br>
-            프라다의 파인 주얼리 컬렉션인 <br>
-            이터널 골드(Eternal Gold)를 선보입니다. 
-          </p>
-          <button>Fine Jewelry</button>
+      <div class="fine_title">
+        <h1>리빙 & 쥬얼리</h1>
+        <p>세련된 디자인과 탁월한 기능성의 만남.
+          언제 어디서나 우아함을 더해줄 당신만의 필수 아이템. <br>
+          최고의 장인 정신으로 완성된 이 가방은, 
+          당신의 스타일을 완성하는 마지막 터치가 될 것입니다</p>
+      </div>
+      <div class="fine_home">
+        <div class="fine_wrap">
+          <div class="fine_01">
+            <p>
+              프라다에서 100% 인증받은 <br>
+              재생 골드로 제작된 <br>
+              프라다의 파인 주얼리 컬렉션인 <br>
+              이터널 골드(Eternal Gold)를 선보입니다. 
+            </p>
+            <button>Fine Jewelry</button>
+          </div>
+          <div class="fine_02">
+            <img src="images/index_fine.jpg" alt="">
+          </div>
         </div>
-        <div class="fine_02">
-          <img src="images/index_fine.jpg" alt="">
+        <div class="living_wrap">
+          <div class="living_01">
+            <img src="images/index_living.jpg" alt="">
+          </div>
+          <div class="living_02">
+            <p>
+              예술성과 문화적 요소가 결합된 프라다 <br>
+              홈 컬렉션과 장식적인 모티프를 만나 보세요.
+            </p>
+            <button>Living</button>
+          </div>
         </div>
       </div>
-      <div class="living_wrap">
-        <div class="living_01">
-          <img src="images/index_living.jpg" alt="">
-        </div>
-        <div class="living_02">
-          <p>
-            예술성과 문화적 요소가 결합된 프라다 <br>
-            홈 컬렉션과 장식적인 모티프를 만나 보세요.
-          </p>
-          <button>Living</button>
-        </div>
-      </div>
+      
     </div>
     <div class="section5">
+      <div class="perfume_title">
+        <div class="line">
+          <!-- line -->
+        </div>
+        <h1>PERFUME</h1>
+      </div>
       <div class="perfume">
-        <hr>
         <div class="perfume_intro">
           <img src="images/products/perfume/perfume_banner.jpg" alt="">
           <p>
@@ -391,7 +428,8 @@
             남성과 여성을 위한 독보적인 제품을 선보입니다.<br>
             프라다 패러독스의 플로럴 앰버 향부터 <br>
             루나 로사 오션의 산뜻하면서도 우디한 노트까지, <br>
-            프라다 향수는 기술을 통해 천연 재료를 재창조하여 새로운 후각적 감각을 드러냅니다. <br>
+            프라다 향수는 기술을 통해 천연 재료를 재창조하여 <br>
+            새로운 후각적 감각을 드러냅니다. <br>
           </p>
         </div>
         <div class="perfume_list_wrap swiper mySwiper">
@@ -490,6 +528,7 @@
         </div>
       </div>
     </div>
+
     <div class="section6">
       <div class="prada_sphere">
         <div class="sphere">
@@ -497,34 +536,46 @@
           <p>프라다스피어에서 프라다 브랜드 이벤트, 남성 여성 신상품 컬렉션 등 <br>
             프라다에 대한 최신 뉴스를 확인하세요.</p>
           <button>
-            <p>View More</p>
+            <p>더보기</p>
             <p>+</p>
           </button>
 
           <div class="accodian">
             <ul class="acco_group">
               <li>
-                <h2 class="m_title active">MENU_1</h2>
+                <div class="m_title">
+                  <h2>스페셜프로젝트</h2>
+                  <h2>+</h2>
+                </div>
                 <p class="m_txt">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos excepturi sunt sed. Voluptatem quam nam nostrum praesentium possimus quaerat molestiae maxime incidunt quia? Numquam soluta, possimus fuga ea iste omnis.
+                  프라다의 스페셜 프로젝트는 지속 가능한 패션을 목표로 다양한 혁신적인 접근 방식을 탐구하는 이니셔티브입니다. 이 프로젝트는 환경에 미치는 영향을 줄이고, 사회적 책임을 강화하며, 지속 가능성을 염두에 둔 제품과 프로세스를 개발하는 데 중점을 둡니다. 프라다는 이를 통해 패션 산업 내에서의 변화를 선도하며, 장기적인 환경 보호와 윤리적인 생산 방식을 추구하고 있습니다.
                 </p>
               </li>
               <li>
-                <h2 class="m_title">MENU_2</h2>
+                <div class="m_title">
+                  <h2>캠페인</h2>
+                  <h2>+</h2>
+                </div>
                 <p class="m_txt">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos excepturi sunt sed. Voluptatem quam nam nostrum praesentium possimus quaerat molestiae maxime incidunt quia? Numquam soluta, possimus fuga ea iste omnis.
+                  프라다의 2024 가을/겨울 캠페인은 여성과 남성을 위한 세련되고 혁신적인 패션을 선보이며, 전통과 현대적 감각을 결합한 스타일을 강조합니다. 이 캠페인은 프라다의 독창적인 디자인 철학을 반영하며, 품질과 디테일에 대한 철저한 주의를 기울여 럭셔리 패션의 새로운 기준을 제시합니다. 캠페인의 비주얼은 프라다 특유의 우아함과 대담함을 담고 있어, 각 컬렉션이 지닌 독특한 매력을 극대화합니다. 
                 </p>
               </li>
               <li>
-                <h2 class="m_title">MENU_3</h2>
+                <div class="m_title">
+                  <h2>패션쇼</h2>
+                  <h2>+</h2>
+                </div>
                 <p class="m_txt">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos excepturi sunt sed. Voluptatem quam nam nostrum praesentium possimus quaerat molestiae maxime incidunt quia? Numquam soluta, possimus fuga ea iste omnis.
+                  프라다의 2025 봄/여름 남성복 패션쇼는 전통과 현대의 경계를 허무는 혁신적인 디자인을 선보입니다. 이번 쇼는 간결하면서도 세련된 실루엣과 대담한 디테일을 통해 남성복의 새로운 방향을 제시하며, 프라다만의 독창적인 패션 철학을 담아내고 있습니다. 컬렉션은 기능성과 예술성이 조화를 이루며, 현대 남성을 위한 세련된 스타일을 강조합니다.
                 </p>
               </li>
               <li>
-                <h2 class="m_title">MENU_4</h2>
+                <div class="m_title">
+                  <h2>이벤트</h2>
+                  <h2>+</h2>
+                </div>
                 <p class="m_txt">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos excepturi sunt sed. Voluptatem quam nam nostrum praesentium possimus quaerat molestiae maxime incidunt quia? Numquam soluta, possimus fuga ea iste omnis.
+                  프라다 프레임스 밀라노 2024 이벤트는 패션과 디자인을 통해 사회적, 문화적 담론을 탐구하는 독특한 경험을 제공합니다. 이 이벤트는 창의성과 혁신을 바탕으로 다양한 분야의 전문가들이 모여, 현대적 이슈를 다루는 패널 토론과 전시를 선보입니다. 프라다의 미학과 철학을 반영한 이 행사는 패션을 넘어 예술, 건축, 기술의 경계를 넘나들며 깊이 있는 대화를 이끌어냅니다.
                 </p>
               </li>
             </ul>
@@ -532,15 +583,130 @@
         </div>
 
         
-
-        <div class="thumbnail_gallery">
-          <ul class="thumbnail">
-            <li>
-              <img src="" alt="">
-            </li>
-          </ul>
+        
+      </div>
+      <!-- pradashpere 끝 -->
+      <div class="thumb_gallery">
+        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/model/model_1.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/model/model_2.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/model/model_3.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/model/model_4.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/model/model_5.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/model/model_6.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/model/model_7.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/model/model_8.jpeg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/model/model_9.jpeg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/model/model_10.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/model/model_11.jpg" />
+            </div>
+            
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+        <div thumbsSlider="" class="swiper mySwiper1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/model/model_1.jpg" />
+              <p>#김현숙</p>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/model/model_2.jpg" />
+              <p>
+                #김현숙 <br>
+                #더조은 <br>
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/model/model_3.jpg" />
+              <p>
+                #김현숙 <br>
+                #컴퓨터 <br>
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/model/model_4.jpg" />
+              <p>
+                #김현숙 <br>
+                #학원 <br>
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/model/model_5.jpg" />
+              <p>
+                #김윤재 <br>
+                #먼치킨 <br>
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/model/model_6.jpg" />
+              <p>
+                #조경선 <br>
+                #꽃밭 <br>
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/model/model_7.jpg" />
+              <p>
+                #강혜진 <br>
+                #루피 <br>
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/model/model_8.jpeg" />
+              <p>
+                #손병석 <br>
+                #귀공자 <br>
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/model/model_9.jpeg" />
+              <p>
+                #이정미 <br>
+                #조교수 <br>
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/model/model_10.jpg" />
+              <p>
+                #남궁수진 <br>
+                #말티즈 <br>
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/model/model_11.jpg" />
+              <p>
+                #장동우 <br>
+                #대장 <br>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
+      
     </div>
   </div>
   <div id="footer">
@@ -597,13 +763,37 @@
     <div class="footer_bottom">
       <div class="copyright">
         <p>©PRADA 2007 - 2024 | Tax registration number is 213-86-18599</p>
+        <p>회사명: 프라다 코리아 (유). 사업자등록번호: 213-86-18599. 대표자: 최문영</p>
       </div>
-      <div class="nations">
-        <p>ship to</p>
-        <img src="" alt="">
+      <div class="button_wrap">
+        <div class="location">
+          <span class="material-symbols-outlined">
+            location_on
+          </span>
+          <p>매장찾기</p>
+        </div>
+        <div class="nations">
+          <p>ship to</p>
+          <img src="images/footer_kr.png" alt="">
+          <ul class="language">
+            <li class="korean">
+              <a href="#">
+                <img src="images/footer_kr.png" alt="">
+                <p>Korean</p>
+              </a>
+            </li>
+            <li class="siru">
+              <a href="#">
+                <img src="images/footer_sr.jpeg" alt="">
+                <p>Siruvian</p>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
+
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
     let swiper = new Swiper(".mySwiper", {
@@ -613,6 +803,7 @@
         el: ".swiper-pagination",
         clickable: true,
       },
+      loop: true,
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -620,17 +811,23 @@
     });
   </script>
   <script>
-    $(document).ready(function(){
-      $(".m_title").click(function(){
-        if($(this).hasClass("active")){
-          $(".m_title").removeClass("active").siblings().slideUp();  
-          //.m_txt를 지칭하는 것임
-        }else{
-          $(".m_title").removeClass("active").siblings().slideUp();  
-          $(this).addClass("active").siblings().slideDown();
-        };
-        
-      });
+    let swiper1 = new Swiper(".mySwiper1", {
+      loop: true,
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+    let swiper2 = new Swiper(".mySwiper2", {
+      loop: true,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      thumbs: {
+        swiper: swiper1,
+      },
     });
   </script>
 </body>
