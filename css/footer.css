@@ -20,7 +20,7 @@
 
 }
 #footer .footer_top .fnb_wrap{
-  border: 1px solid red;
+  /* border: 1px solid red; */
   box-sizing: border-box;
   width: 40%;
   /* padding-right: 700px; */
@@ -31,7 +31,7 @@
   /* width: 500px; */
   display: flex;
   justify-content: space-evenly;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   box-sizing: border-box;
 }
 #footer .footer_top .fnb_wrap .fnb>li{
@@ -62,7 +62,7 @@
   /* height: 100px; */
   display: flex;
   justify-content: right;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   box-sizing: border-box;
 }
 #footer .footer_top .sns_wrap .sns>li{
