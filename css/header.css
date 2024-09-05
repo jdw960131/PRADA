@@ -90,27 +90,13 @@ body{
         width: 100%;
         position: relative;
         text-align: center;
-        display: flex;
-        justify-content: center;
+        /* display: flex;
+        justify-content: center; */
     }
     #header .logo .headlg{
         width: 150px; 
         margin: 0 auto;
+        border: 1px solid black;
     }
-    #header .logo .menu{
-        border: 1px solid blue;
-        width: 100px;
-        height: 50px;
-
-
-    }
-        #header .logo .menu img{
-        width: 100%;
-        height: 100%;
-        border: 1px solid green;
-        /* position: absolute;
-        left: 0px; top: -100px; */
-    }
-
     
 }
