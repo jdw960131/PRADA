@@ -39,13 +39,14 @@ body{
 }
 #header .gnb_wrap .gnb{
     width: 100%;
-    min-width: 1500px;
+    /* min-width: 1024px; */
     margin: 0 auto;
     display: flex;
     justify-content: space-evenly;
+    border: 1px solid red;
     border-bottom: 1px solid rgba(0, 0, 0, 0.328);
     box-sizing: border-box;
-    padding: 0px 250px;
+    padding: 0px 5%;
     overflow: hidden;
     /* height: 350px; */
     height: 0px;
@@ -81,11 +82,10 @@ body{
 
 
 /* --------------------------------------------------- */
-
-@media all and (max-width: 768px){
+@media all and (min-width: 0px) and (max-width: 855px){
     #header .gnb_wrap{
     display: none;
-}
+    }
     #header .logo{
         /* border: 1px solid red; */
         width: 100%;
@@ -97,18 +97,7 @@ body{
     #header .logo>a .headlg{
         width: 150px; 
         margin: 0 auto;
+        border: 1px solid black;
     }
-    #header .logo .menu{
-        /* border: 1px solid blue; */
-        width: 100px;
-        height: 50px;
-
-    }
-        #header .logo .menu img{
-        width: 100%;
-        height: 100%;
-        /* border: 1px solid green; */
-    }
-
-    
 }
+/* --------------------------------------------------- */
