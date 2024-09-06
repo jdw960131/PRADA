@@ -78,6 +78,9 @@ body{
 #header .gnb_wrap .gnb .sub>li>a:hover{
     font-weight: 600;
 }
+#header .gnb_wrap .gnb>li:last-child a{
+    color: #afe0ff;
+}
 
 
 

@@ -749,7 +749,7 @@ body{
 #section .sus_congroup .swiper-wrapper .swiper-slide .sus_name{
   font-size: 12pt;
 }
-/* --------------- */
+/* -mob_change-------------- */
 
 #section .change{
   width: 100%;
@@ -764,7 +764,7 @@ body{
 }
 #section .change .change_group>li .change_conts .detail .con_txt{
   font-size: 10pt;
-  /* display: none; */
+  display: none;
 }
 #section .change .change_group>li .change_conts .detail{
   display: none;
@@ -780,7 +780,7 @@ body{
   width: 100%;
 }
 
-/* mob----------------- */
+/* mob_re----------------- */
 
 #section .renylon{
   width: 100%;
@@ -846,11 +846,11 @@ body{
   height: 40%;
 }
 #section .renylon .renylon_conts .renylon_product>li .pro_name{
-  width: 50%;height: 10%;
+  width: 60%;height: 20%;
   font-size: 10pt;
   position: absolute;
   bottom: 0;right: 0;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 #section .renylon .renylon_conts .renylon_product li .angle{
   border-bottom: 90px solid rgba(128, 128, 128, 0.229);
@@ -859,7 +859,7 @@ body{
   border-left: 90px solid transparent;
 }
 
-/* mob-------------------------- */
+/* mob_value-------------------------- */
 
 #section .value{
   width: 100%;
@@ -937,7 +937,7 @@ body{
   text-align: center;
 }
 #section .pradagroup .pradagroup_title{
-  font-size: 20pt;
+  font-size: 15pt;
 }
 #section .pradagroup .logo_gr li>a>img{
   height: 100px;
