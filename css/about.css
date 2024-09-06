@@ -723,6 +723,7 @@ body{
 #section .main .main_txt{
   font-size: 10pt;
 }
+/* ------------- */
 #section .sustainable{
   width: 100%;
   margin-top: 100px;
@@ -748,6 +749,8 @@ body{
 #section .sus_congroup .swiper-wrapper .swiper-slide .sus_name{
   font-size: 12pt;
 }
+/* --------------- */
+
 #section .change{
   width: 100%;
   margin-top: 100px;
@@ -759,9 +762,9 @@ body{
 #section .change .change_group{
   margin-top: 80px;
 }
-#section .change .change_group>li .change_conts .con_txt{
+#section .change .change_group>li .change_conts .detail .con_txt{
   font-size: 10pt;
-  display: none;
+  /* display: none; */
 }
 #section .change .change_group>li .change_conts .detail{
   display: none;
@@ -776,6 +779,9 @@ body{
 #section .change .change_group>li .change_conts>li{
   width: 100%;
 }
+
+/* mob----------------- */
+
 #section .renylon{
   width: 100%;
   margin-top: 100px;
@@ -852,6 +858,9 @@ body{
   border-top: 90px solid transparent;
   border-left: 90px solid transparent;
 }
+
+/* mob-------------------------- */
+
 #section .value{
   width: 100%;
   /* border: 1px solid red; */
@@ -915,6 +924,11 @@ body{
 #section .value .tab_conts .tab_detail li:nth-child(3){
   display: none;
 }
+
+
+/* -mob---------------- */
+
+
 #section .background{
   display: none;
 }
