@@ -38,6 +38,15 @@ $(".ham_gnb_home>li:first-child").click(function(){
   }
 });
 
+$(".change_group>li").click(function(){
+  if($(this).hasClass("acco")){
+    $(".change_group>li").removeClass("acco");
+  }else{
+    $(".change_group>li").removeClass("acco");
+    $(this).addClass("acco");
+  }
+});
+
   function asd(){
     $(".main_img").stop().animate({"margin-top":"-200vh"},1000,function(){
         $(".main_img>li:first-child").appendTo(".main_img");

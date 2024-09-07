@@ -761,12 +761,30 @@ body{
 }
 #section .change .change_group{
   margin-top: 80px;
+  width: 100%;
+}
+#section .change .change_group>li{
+  width: 100%;height: 50px;
+  margin-top: 10px;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+#section .change .change_group>li.acco{
+  height: 300px;
 }
 #section .change .change_group>li .change_conts .detail .con_txt{
   font-size: 10pt;
-  display: none;
 }
 #section .change .change_group>li .change_conts .detail{
+  width: 100%;
+  position: absolute;
+  left: 0;top: 0;
+  z-index: 1000;
+  margin-top: 100px;
+  background-color: #52525288;
+  color: #fff;
+}
+#section .change .change_group>li .change_conts .detail img{
   display: none;
 }
 #section .change .change_txt{
