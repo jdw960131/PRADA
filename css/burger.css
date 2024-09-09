@@ -165,4 +165,7 @@ display: none;
 #header .ham .ham_gnb>li .ham_sub>li a:hover{
     font-weight: 500;
 }
+#header .ham .ham_gnb>li:last-child a{
+    text-decoration: underline;
+}
 }
