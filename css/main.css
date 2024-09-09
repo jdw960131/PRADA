@@ -23,14 +23,14 @@ body{
 /* --------------------------------------------------- */
 #section .section1{
     width: 100%;
-    height: 800px;
+    height: 55;
     overflow: hidden;
     /* border: 1px solid red; */
 }
 /* --------------------------------------------------- */
 #section .section2{
-    width: 66%;
-    margin: 0px auto;
+    width: calc(100% - 20%);
+    margin: 100px auto;
     overflow: hidden;
 }
 #section .section2 .discover_title{
@@ -39,18 +39,18 @@ body{
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 50px;
 }
 #section .section2 .discover_title>h1{
     font-weight: 500;
 }
 #section .section2 .discover_title .line{
-    width: 1350px;
+    width: 80%;
     height: 1px;
     margin-top: 25px;
-    margin-right: -320px;
+    margin-right: 0px;
     background-color: #0000007c;
 }
+
 #section .section2 .discover{
     /* border: 1px solid black; */
     box-sizing: border-box;
@@ -59,124 +59,99 @@ body{
     justify-content: space-between;
     text-align: center;
 }
-#section .section2 .discover .dis:hover img{
-    filter: grayscale(1);
+#section .section2 .discover .dis{
+    margin-top: 50px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+}
+
+#section .section2 .discover .dis_01{
+    background-image: url(../images/discover1-1.jpg);
+}
+#section .section2 .discover .dis_02{
+    background-image: url(../images/discover2.jpg);
+}
+#section .section2 .discover .dis_03{
+    background-image: url(../images/discover3.jpg);
+}
+#section .section2 .discover .dis_04{
+    background-image: url(../images/discover4-1.png);
 }
 #section .section2 .discover .dis_01,
 #section .section2 .discover .dis_04{
     position: relative;
     width: 30%;
-    /* height: 400px; */
     overflow: hidden;
-    border: 1px solid red;;
+    /* border: 1px solid rgb(0, 21, 255);; */
 }
-#section .section2 .discover .dis_01 img,
-#section .section2 .discover .dis_04 img{
-    width: 100%;
-    /* height: 100%; */
-    object-fit: cover;
-    transform: scale(1.1);
+#section .section2 .discover .dis_02,
+#section .section2 .discover .dis_03{
+    position: relative;
+    width: 63%;
+    overflow: hidden;
+    /* border: 1px solid red;; */
 }
-#section .section2 .discover .dis_01>img,
-#section .section2 .discover .dis_04>img{
+#section .section2 .discover .dis .dis_info{
+    display: none;
     position: absolute;
-    left: 0;
-    top: 0;
+    /* border: 1px solid red; */
+    background-color: rgba(0, 0, 0, 0.414);
+}
+#section .section2 .discover .dis:hover .dis_info{
+    display: block;
+    
 }
 #section .section2 .discover .dis_01 .dis_info_01,
 #section .section2 .discover .dis_04 .dis_info_04{
-    background-image: url("../images/discover1-2.jpg");
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
-    
-    width: 100%;
-    height: 400px;
-    display: none;
-    position: absolute;
-    left: 0;
-    top: 0;
+    background-repeat: no-repeat;
+    right: 0;
+    bottom: 0;
 }
-#section .section2 .discover .dis_01:hover .dis_info_01,
-#section .section2 .discover .dis_04:hover .dis_info_04{
-    display: block;
+#section .section2 .discover .dis_01 .dis_info_01{
+    background-image: url(../images/discover1-2.jpg);
 }
-/* #section .section2 .discover .dis_01 .dis_info_01>img,
-#section .section2 .discover .dis_04 .dis_info_04>img{
-    position: absolute;
-    left: 0;
-    top: 0;
-} */
-#section .section2 .discover .dis_01 .dis_info_01>p,
-#section .section2 .discover .dis_04 .dis_info_04>p{
-    width: 100%;
-    /* font-size: 20px; */
-    /* height: 200px; */
-    position: absolute;
-    left: 50%; 
-    bottom: 0px;
-    transform: translateX(-50%);
-    color: white;
-    background-color: rgba(0, 0, 0, 0.414);
-    padding: 50px 0px;
-    /* margin-bottom: 50px; */
-    box-sizing: border-box;
-}
-#section .section2 .discover .dis_01 .dis_info_01>p{
-    width: 100%;
-    /* font-size: 20px; */
-    /* height: 200px; */
-    position: absolute;
-    left: 50%; 
-    bottom: 0px;
-    transform: translateX(-50%);
-    color: white;
-    background-color: rgba(0, 0, 0, 0.414);
-    padding: 50px 0px;
-    /* margin-bottom: 50px; */
-    box-sizing: border-box;
-}
-/* --------------------------------------------------- */
-#section .section2 .discover .dis_02,
-#section .section2 .discover .dis_03{
-    width: 63%;
-    /* height: 400px; */
-    overflow: hidden;
-    /* border: 1px solid red;; */
-    position: relative;
-}
-#section .section2 .discover .dis_02>img,
-#section .section2 .discover .dis_03>img{
-    width: 100%;
-    object-fit: cover;
-    transform: scale(1.12);
+#section .section2 .discover .dis_04 .dis_info_04{
+    background-image: url(../images/discover4-2.jpg);
 }
 #section .section2 .discover .dis_02 .dis_info_02,
 #section .section2 .discover .dis_03 .dis_info_03{
     width: 50%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.414);
+    right: 0;
+    bottom: 0;
+}
+#section .section2 .discover .dis_01 .dis_info_01>p{
+    font-size: 0.9vw;
+}
+#section .section2 .discover .dis_01 .dis_info_01>p,
+#section .section2 .discover .dis_04 .dis_info_04>p{
+    width: 100%;
+    height: 100%;
     color: white;
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-    display: none;
+    padding: 40% 0px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.414);
 }
-#section .section2 .discover .dis_02:hover .dis_info_02,
-#section .section2 .discover .dis_03:hover .dis_info_03{
-    display: block;
+#section .section2 .discover .dis_02 .dis_info_02>p,
+#section .section2 .discover .dis_03 .dis_info_03>p{
+    width: 100%;
+    height: 100%;
+    padding: 40% 0;
+    box-sizing: border-box;
+    color: white;
 }
-#section .section2 .discover .dis_02:hover .dis_info_02>p,
-#section .section2 .discover .dis_03:hover .dis_info_03>p{
-    margin-top: 180px;
-}
-#section .section2 .discover .dis_03,
-#section .section2 .discover .dis_04{
-    margin-top: 50px;
-}
+
 /* --------------------------------------------------- */
 #section .section3{
     margin-top: 150px;
+    /* width: 100%; */
 }
 #section .section3 .ready_title{
     /* border: 1px solid black; */
@@ -239,7 +214,7 @@ body{
 }
 /* --------------------------------------------------- */
 #section .section4{
-    width: 1280px;
+    width: calc(100% - 20%);
     margin: 100px auto;
 }
 #section .section4 .fine_title{
@@ -314,10 +289,10 @@ body{
     width: 50%;
     height: 640px;
     overflow: hidden;
-}
-#section .section4 .fine_wrap .fine_02>img{
-    width: 100%;
-    margin-top: -400px;
+    background-image: url(../images/index_fine.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 #section .section4 .living_wrap{
     width: 100%;
@@ -329,9 +304,10 @@ body{
     width: 50%;
     height: 640px;
     overflow: hidden;
-}
-#section .section4 .living_wrap .living_01>img{
-    width: 100%;
+    background-image: url(../images/index_living.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 #section .section4 .living_wrap .living_02{
     width: 50%;
@@ -393,6 +369,10 @@ body{
     height: 100%;
 }
 /* --------------------------------------------------- */
+#section .section5{
+    width: calc(100% - 20%);
+    margin: 0 auto;
+}
 #section .section5 .perfume_title{
     margin-top: 150px;
     /* border: 1px solid red; */
@@ -402,45 +382,44 @@ body{
     margin-bottom: 50px;
 }
 #section .section5 .perfume_title .line{
-    width: 1400px;
+    width: 85%;
     height: 1px;
     margin-top: 25px;
     margin-right: 0px;
     background-color: #0000007c;
 }
 #section .section5 .perfume_title>h1{
-    padding-right: 310px;
+    /* padding-right: 310px; */
     font-weight: 500;
 }
-#section .section5 .perfume hr{
-    width: 500px;
-    color: red;
-}
 #section .section5 .perfume .perfume_intro{
-    width: 1280px;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     /* border: 1px solid black; */
     box-sizing: border-box;
 }
-#section .section5 .perfume .perfume_intro>img{
-    width: 500px;
+#section .section5 .perfume .perfume_intro .intro_pic{
+    width: 50%;
+}
+#section .section5 .perfume .perfume_intro .intro_pic>img{
+    width: 100%;
     
 }
 #section .section5 .perfume .perfume_intro>p{
-    /* border: 1px solid black; */
+    /* border: 1px solid blue; */
     box-sizing: border-box;
-    font-size: 20px;
+    font-size: 1.3vw;
     font-weight: 300;
     line-height: 40px;
     text-align: center;
-    padding-top: 150px;
+    padding-top: 10vw;
 }
 #section .section5 .perfume .perfume_list_wrap{
     /* border: 1px solid black; */
     box-sizing: border-box;
-    width: 1280px;
+    width: 100%;
     position: relative;
     /* overflow: hidden; */
 }
@@ -474,7 +453,7 @@ body{
 }
 #section .section5 .perfume .perfume_list_wrap .swiper-wrapper{
     /* border: 1px solid black; */
-    height: 500px;
+    height: 30vw;
 }
 #section .section5 .perfume .perfume_list_wrap .swiper-pagination-bullet-active{
     background-color: #67905c;
@@ -493,11 +472,13 @@ body{
 /* --------------------------------------------------- */
 #section .section6{
     display: flex !important;
-    width: 1280px;
+    width: calc(100% - 20%);
     margin: 100px auto;
 }
 #section .section6 .prada_sphere{
     width: 50%;
+    /* border: 1px solid green; */
+
 }
 #section .section6 .prada_sphere .sphere{
     width: 100%;
@@ -528,7 +509,7 @@ body{
     border: 1px solid #45653e;
 }
 #section .section6 .prada_sphere .accodian{
-    width: 400px;
+    width: 80%;
     /* margin: 0 auto; */
 }
 #section .section6 .prada_sphere .accodian .acco_group>li{
@@ -630,18 +611,19 @@ body{
 /* --------------------------------------------------- */
 @media all and (min-width: 394px) and (max-width: 1024px){
     #section .section1{
-        height: 550px;
+        height: 55%;
     }
     /* --------------------------------------------------- */
     #section .section2{
         width: 100%;
         overflow: hidden;
+        margin: 10px auto;
     }
-    #section .section2 .discover_title>h1{
-        margin-left: 100px;
+    #section .section2 .discover_title{
+        margin-top: 100px;
     }
     #section .section2 .discover_title .line{
-        width: 700px;
+        width: 70%;
         margin-right: 0px;
     }
     #section .section2 .discover {
@@ -681,9 +663,9 @@ body{
         right: 100px;
         top: 100px;
     }
-    #section .section2 .discover .dis_02:hover .dis_info_02>p,
-    #section .section2 .discover .dis_03:hover .dis_info_03>p{
-        margin-top: 0px;
+    #section .section2 .discover .dis_02 .dis_info_02>p,
+    #section .section2 .discover .dis_03 .dis_info_03>p{
+        padding: 0;
     }
 /* --------------------------------------------------- */
     #section .section3 .wrap{
@@ -728,48 +710,51 @@ body{
     }
 /* --------------------------------------------------- */
     #section .section5 .perfume_title .line{
-        width: 700px;
-    }
-    #section .section5 .perfume_title>h1{
-        padding-right: 100px;
-    }
-    #section .section5 .perfume .perfume_intro{
-        width: 1024px;
-        padding-right:30px;
+        width: 70%;
     }
     #section .section5 .perfume .perfume_intro>p{
-        font-size: 15px;
-    }
-/* --------------------------------------------------- */
-    #section .section5 .perfume .perfume_list_wrap{
-        width: 1024px;
-        /* border: 1px solid red; */
+        line-height: 25px;
     }
     #section .section5 .perfume .perfume_list_wrap .perfume_list .swiper-slide{
         width: 20px;
         /* border: 1px solid red; */
     }
-    #section .section5 .perfume .perfume_list_wrap .swiper-wrapper{
-        height: 350px;
+    #section .section5 .perfume .perfume_list_wrap .perfume_list .swiper-slide .type{
+        margin-top: -20px;
+        /* padding-top: 30%; */
+        font-size: 1.7vw;
+        /* border: 1px solid red; */
+    }
+    #section .section5 .perfume .perfume_list_wrap .perfume_list .swiper-slide .name{
+        font-size: 1.2vw;
     }
     #section .section5 .perfume .perfume_list_wrap .swiper-button-next::after,
     #section .section5 .perfume .perfume_list_wrap .swiper-button-prev::after{
-        margin-top: 300px;
+        margin-top: 25vw;
     }
     #section .section5 .perfume .perfume_bar{
         height: 150px;
-        margin-top: -200px;
+        margin-top: -150px;
     }
 /* --------------------------------------------------- */
     #section .section6{
-        width: 1024px;
+        /* width: 1024px; */
     }
     #section .section6 .prada_sphere{
-        padding-left: 40px;
+        /* padding-left: 40px; */
     }
     #section .section6 .prada_sphere .sphere>h1{
         font-size: 40px;
         margin-top: 40px;
+    }
+    #section .section6 .prada_sphere .sphere>p{
+        font-size: 1.6vw;
+        margin: 40px 0px;
+        margin-right: 40px;
+    }
+    #section .section6 .prada_sphere .accodian .acco_group>li .m_title,
+    #section .section6 .thumb_gallery .mySwiper1 .swiper-slide>p{
+        font-size: 1.5vw;
     }
 }
 
@@ -782,11 +767,12 @@ body{
     #section .section2{
         width: 100%;
         overflow: hidden;
+        margin: 10px auto;
         /* border: 1px solid blue; */
 
     }
     #section .section2 .discover_title{
-        margin-top: 20px;
+        margin-top: 10px;
         margin-bottom: 20px;
     }
     #section .section2 .discover_title>h1{
@@ -840,9 +826,9 @@ body{
         right: 10px;
         top: 100px;
     }
-    #section .section2 .discover .dis_02:hover .dis_info_02>p,
-    #section .section2 .discover .dis_03:hover .dis_info_03>p{
-        margin-top: 0px;
+    #section .section2 .discover .dis_02 .dis_info_02>p,
+    #section .section2 .discover .dis_03 .dis_info_03>p{
+        padding: 0;
     }
 /* ------------------------------------------- */
     #section .section3{
@@ -967,38 +953,36 @@ body{
         height: 30px;
     }
 /* --------------------------------------------------- */
-    #section .section5{
-        /* border: 1px solid green; */
-    }
     #section .section5 .perfume_title{
         margin-top: 40px;
     }
     #section .section5 .perfume_title .line{
-        width: 270px;
+        width: 60%;
         margin-top: 15px;
         margin-right: 0px;
     }
     #section .section5 .perfume_title>h1{
         font-size: 17px;
-        padding-right: 20px;
     }
     #section .section5 .perfume .perfume_intro{
         flex-direction: column;
-        width: 393px;
-        padding-bottom: 50px;
+        /* width: 393px; */
     }
-    #section .section5 .perfume .perfume_intro>img{
-        width: 250px;
+    #section .section5 .perfume .perfume_intro .intro_pic{
         margin: 0 auto;
+    }
+    #section .section5 .perfume .perfume_intro .intro_pic>img{
+        width: 100%;
+        margin: 0 auto;
+        /* border: 1px solid red; */
     }
     #section .section5 .perfume .perfume_intro>p{
         font-size: 10px;
         line-height: 15px;
         padding-top: 30px;
     }
-/* --------------------------------------------------- */
     #section .section5 .perfume .perfume_list_wrap{
-        width: 393px;
+        /* width: 393px; */
     }
     #section .section5 .perfume .perfume_list_wrap .perfume_list .swiper-slide .type{
         margin-top: -10px;
@@ -1028,10 +1012,10 @@ body{
     }
 /* --------------------------------------------------- */
     #section .section6{
-        width: 393px;
-        height: 500px;
+        /* width: 393px; */
+        /* height: 500px; */
         /* border: 1px solid green; */
-        margin: 0px;
+        /* margin: 0px; */
         margin-top: 60px;
     }
     #section .section6 .prada_sphere{
@@ -1049,6 +1033,9 @@ body{
     }
     #section .section6 .prada_sphere .sphere>button{
         display: none;
+    }
+    #section .section6 .prada_sphere .accodian{
+        width: 100%;
     }
     #section .section6 .prada_sphere .accodian .acco_group>li .m_title>h2{
         font-size: 13px;
