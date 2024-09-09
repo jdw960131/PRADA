@@ -408,12 +408,14 @@ body{
     
 }
 #section .section5 .perfume .perfume_intro>p{
+    width: 50%;
     /* border: 1px solid blue; */
     box-sizing: border-box;
     font-size: 1.3vw;
     font-weight: 300;
     line-height: 40px;
     text-align: center;
+    padding: 0px 5vw;
     padding-top: 10vw;
 }
 #section .section5 .perfume .perfume_list_wrap{
@@ -491,6 +493,7 @@ body{
 }
 #section .section6 .prada_sphere .sphere>p{
     margin: 40px 0px;
+    margin-right: 100px;
 }
 #section .section6 .prada_sphere .sphere>button{
     width: 200px;
@@ -713,7 +716,9 @@ body{
         width: 70%;
     }
     #section .section5 .perfume .perfume_intro>p{
-        line-height: 25px;
+        font-size: 1.5vw;
+        line-height: 3vw;
+        padding-top: 5vw;
     }
     #section .section5 .perfume .perfume_list_wrap .perfume_list .swiper-slide{
         width: 20px;
@@ -973,12 +978,13 @@ body{
     }
     #section .section5 .perfume .perfume_intro .intro_pic>img{
         width: 100%;
-        margin: 0 auto;
         /* border: 1px solid red; */
     }
     #section .section5 .perfume .perfume_intro>p{
+        width: 100%;
         font-size: 10px;
         line-height: 15px;
+        padding: 0px 20px;
         padding-top: 30px;
     }
     #section .section5 .perfume .perfume_list_wrap{
@@ -1029,7 +1035,7 @@ body{
     #section .section6 .prada_sphere .sphere>p{
         font-size: 10px;
         text-align: center;
-        margin-top: 20px;
+        margin: 20px auto;
     }
     #section .section6 .prada_sphere .sphere>button{
         display: none;
