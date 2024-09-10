@@ -236,6 +236,9 @@ body{
     padding-top: 150px;
     box-sizing: border-box;
 }
+#section .section4 .fine_wrap .fine_01>p{
+    font-weight: 300;
+}
 #section .section4 .fine_wrap .fine_01 button{
     width: 200px;
     height: 60px;
@@ -318,6 +321,9 @@ body{
     color: #525252;
     padding-top: 230px;
     box-sizing: border-box;
+}
+#section .section4 .living_wrap .living_02>p{
+    font-weight: 300;
 }
 #section .section4 .living_wrap .living_02>button{
     width: 200px;
@@ -480,7 +486,8 @@ body{
 #section .section6 .prada_sphere{
     width: 50%;
     /* border: 1px solid green; */
-
+    box-sizing: border-box;
+    padding-top: 50px;
 }
 #section .section6 .prada_sphere .sphere{
     width: 100%;
@@ -494,6 +501,7 @@ body{
 #section .section6 .prada_sphere .sphere>p{
     margin: 40px 0px;
     margin-right: 100px;
+    font-size: 1.2vw;
 }
 #section .section6 .prada_sphere .sphere>button{
     width: 200px;
@@ -523,17 +531,24 @@ body{
     line-height: 60px;
     padding: 0px 30px;
     cursor: pointer;
-    border-bottom: 1px solid #525252;
+    /* border-bottom: 1px solid #adadad; */
     display: flex;
     justify-content: space-between;
+    color: #525252;
+}
+#section .section6 .prada_sphere .accodian .acco_group>li .m_title>h2{
+    font-weight: 400;
 }
 #section .section6 .prada_sphere .accodian .acco_group>li .m_title:hover{
-    background-color: #52525268;
+    background-color: #525252;
     color: white;
 }
 #section .section6 .prada_sphere .accodian .acco_group>li .m_txt{
-    padding: 20px;
+    padding: 5% 10%;
     display: none;
+    font-size: 0.9vw;
+    line-height: 2em;
+    color: #525252;
 }
 /* #section .section6 .prada_sphere .accodian .acco_group>li:nth-child(1) .m_txt{
     display: block;
