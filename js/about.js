@@ -2,12 +2,6 @@ $(document).ready(function(){
   let i = 0;
   let count = $(".main_img>li").length;
 
-  // let auto = setInterval(function(){
-  //   i = $(this).index();
-  //   dongwoo();
-  // },1000);
-
-
   let autoSlide = setInterval(function(){
     if(i == count-1){
       i=0;
@@ -16,6 +10,20 @@ $(document).ready(function(){
     }
       dongwoo()
   },5000);
+
+  $(".main_img").mouseenter(function(){
+    clearInterval(autoSlide);  
+    });
+    $(".main_img").mouseleave(function(){
+      autoSlide = setInterval(function(){
+        if(i == count-1){
+          i=0;
+        }else{
+          i++;
+        }
+          dongwoo()
+      },5000);
+    });
 
 
   $(".nav>li").click(function(){
@@ -73,5 +81,4 @@ function dongwoo(){
     $(".tab_bt>li").removeClass("on")
     $(this).addClass("on")
   });
-
 });
