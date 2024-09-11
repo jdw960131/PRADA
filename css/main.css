@@ -41,7 +41,8 @@ body{
     justify-content: space-between;
 }
 #section .section2 .discover_title>h1{
-    font-weight: 500;
+    font-weight: 400;
+    font-size: 2em;
 }
 #section .section2 .discover_title .line{
     width: 80%;
@@ -65,6 +66,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     height: 40vh;
+    cursor: pointer;
 }
 
 #section .section2 .discover .dis_01{
@@ -158,11 +160,13 @@ body{
     text-align: center;
 }
 #section .section3 .ready_title>h1{
-    font-weight: 500;
+    font-weight: 400;
+    font-size: 2em;
 }
 #section .section3 .ready_title>p{
     color: #525252;
-    font-size: 15px;
+    font-size: 1.5em;
+    font-weight: 300;
     margin-top: 20px;
 }
 /* #section .section3 .ready .ready_list{
@@ -240,9 +244,9 @@ body{
     font-weight: 300;
 }
 #section .section4 .fine_wrap .fine_01 button{
-    width: 200px;
-    height: 60px;
-    font-size: 25px;
+    width: 180px;
+    height: 55px;
+    font-size: 20px;
     font-weight: 300;
     color: #525252;
     /* border-radius: 30px; */
@@ -256,7 +260,7 @@ body{
     content: "";
     display: block;
     width: 0%;
-    height: 60px;
+    height: 55px;
     position: absolute;
     left: 50%; 
     top: 0px;
@@ -326,9 +330,9 @@ body{
     font-weight: 300;
 }
 #section .section4 .living_wrap .living_02>button{
-    width: 200px;
-    height: 60px;
-    font-size: 25px;
+    width: 180px;
+    height: 55px;
+    font-size: 20px;
     font-weight: 300;
     color: #525252;
     /* border-radius: 30px; */
@@ -341,7 +345,7 @@ body{
     content: "";
     display: block;
     width: 0%;
-    height: 60px;
+    height: 55px;
     position: absolute;
     left: 50%; 
     top: 0px;
@@ -396,7 +400,8 @@ body{
 }
 #section .section5 .perfume_title>h1{
     /* padding-right: 310px; */
-    font-weight: 500;
+    font-weight: 400;
+    font-size: 2em;
 }
 #section .section5 .perfume .perfume_intro{
     width: 100%;
@@ -419,8 +424,8 @@ body{
     box-sizing: border-box;
     font-size: 1.3vw;
     font-weight: 300;
-    line-height: 40px;
-    text-align: center;
+    line-height: 2em;
+    text-align: left;
     padding: 0px 5vw;
     padding-top: 10vw;
 }
@@ -481,7 +486,7 @@ body{
 #section .section6{
     display: flex !important;
     width: calc(100% - 20%);
-    margin: 100px auto;
+    margin: 150px auto;
 }
 #section .section6 .prada_sphere{
     width: 50%;
@@ -495,13 +500,14 @@ body{
     box-sizing: border-box;
 }
 #section .section6 .prada_sphere .sphere>h1{
-    font-size: 60px;
-    font-weight: 500;
+    font-size: 3em;
+    font-weight: 400;
 }
 #section .section6 .prada_sphere .sphere>p{
     margin: 40px 0px;
     margin-right: 100px;
     font-size: 1.2vw;
+    font-weight: 300;
 }
 #section .section6 .prada_sphere .sphere>button{
     width: 200px;
