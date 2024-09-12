@@ -25,7 +25,7 @@ body{
   font-size: 3vw;
   font-weight: 800;
   letter-spacing: 5px;
-  margin-top: 150px;
+  margin-top: 200px;
   color: #000;
   text-shadow: 2px 2px #ccccccc1;
 }
@@ -45,7 +45,7 @@ body{
   /* width: calc(100%-640px); */
   width: 100%;
   height: 100vh;
-  margin-top: 100px;
+  margin-top: 200px;
   overflow: hidden;
   position: relative;
 }
@@ -89,16 +89,17 @@ body{
   width: calc(100% - 640px);
   min-width: calc(1420px - 640px);
   /* border: 1px solid yellowgreen; */
-  margin: 50px auto;
+  margin: 100px auto;
   position: relative;
+  overflow: hidden;
 }
 #section .sustainable .sus_title{
-  font-size: 20pt;
+  font-size: 2em;
   font-weight: 400;
 }
 #section .sustainable .sus_txt{
   margin-top: 20px;
-  font-size: 15pt;
+  font-size: 1.5em;
   font-weight: 300;
 }
 #section .sustainable .sus_arrow{
@@ -129,7 +130,7 @@ body{
 #section .sustainable .sus_congroup .swiper-wrapper{
   width: 100%;
   display: flex; 
-  margin-left: 80px;
+  margin-left: 50px;
   margin-top: 100px;
 }
 #section .sustainable .swiper-slide img{
@@ -149,22 +150,21 @@ body{
 /* ------------ */
 
 #section .change{    
-  width: 100%;
+  width: calc(100% - 640px);
+  min-width: calc(1420px - 640px);
   margin: 0 auto;   
-  margin-top: 200px;
+  margin-top: 100px;
   /* display: none; */
 }
 #section .change .change_title{
   text-align: right;
-  margin-right: 150px;
-  font-size: 20pt;
+  font-size: 2em;
   font-weight: 400;
 }
 #section .change .change_txt{
   text-align: right;
   margin-top: 20px;
-  margin-right: 150px;
-  font-size: 15pt;
+  font-size: 1.5em;
   font-weight: 300;
 }
 #section .change .change_group{
@@ -234,8 +234,9 @@ body{
 /* -----------gsap------------------ */
 
 #parallax__cont {
-  max-width: 1600px;
-  width: 100%;
+  max-width: calc(100% - 640px); 
+  min-width: 1024px;
+  width: 98%;
   margin: 0 auto;
   background-color: rgba(255,255,255,0.1);
 }
@@ -245,7 +246,7 @@ body{
   color: #525252;
 }
 .parallax__item {
-  width: 70%;
+  width: 800px;
   max-width: 70vw;
   margin: 3vw auto;
   /* background-color: rgba(255,255,255,0.3); */
@@ -276,6 +277,7 @@ body{
   background-size: cover;
   filter: saturate(0%);
   transition: all 1s;
+
 }
 .parallax__item__img:hover {
   filter: saturate(100%);
@@ -293,19 +295,22 @@ body{
 }
 .parallax__item__desc {
   width: 100%;
-  color: #000;
-  font-size: 1.4vw;
+  color: #fff;
+  font-size: 1.5em;
   font-weight: 300;
   line-height: 1.4;
   margin-top: -5vw;
-  margin-left: 5%;
-  z-index: 100;
+  margin-left: -25.5vw;
+  z-index: 500;
   position: relative;
   word-break: keep-all;
+  background-color: #00000041;
+  padding: 15px;
 }
 .parallax__item:nth-child(even) .parallax__item__desc {
   margin-left: auto;
-  margin-right: -38vw;
+  width: 100%;
+  margin-right: -25.5vw;
 }
 /* ----------------------------------- */
 
@@ -342,7 +347,7 @@ body{
   top: 25%;left: 25%;
 }
 #section .renylon_intro .renylon_intro_right .renylon_title{
-  font-size: 2vw;
+  font-size: 2em;
   position: absolute;
   top: 25%;left: 25%;
 }
@@ -350,7 +355,7 @@ body{
   margin: 30px auto;
   width: 100%;
   text-align: left;
-  font-size: 15pt;
+  font-size: 1.5em;
   font-weight: 300;
   position: absolute;
   bottom:20px;left:30px;
@@ -369,7 +374,8 @@ body{
   width: 80%;
 }
 #section .renylon_conts .renylon_left .renylon_detail{
-  font-size: 20pt; font-weight: 300;
+  font-size: 1.5em; 
+  font-weight: 300;
   margin-top: 80px;
 
 }
@@ -413,8 +419,8 @@ body{
 }
 #section .renylon .renylon_conts .renylon_product li .angle {
   width: 0px; height:0px;
-  border-bottom: 150px solid rgba(128, 128, 128, 0.229);
-  border-right: 150px solid rgba(128, 128, 128, 0.229);
+  border-bottom: 150px solid #00273d53;
+  border-right: 150px solid #00273d53;
   border-top: 150px solid transparent;
   border-left: 150px solid transparent;
   color: #fff;
@@ -579,7 +585,7 @@ body{
 #section .background{
   margin-top: 200px;
   width: 100%;
-  height: 300px;
+  height: 500px;
   overflow: hidden;
 }
 #section .background .back_banner{
@@ -591,15 +597,15 @@ body{
   background-position: center center;
 }
 #section .pradagroup{
-  width: calc(100%-20%);
-  margin: 0 auto;
-  margin-top: 100px;
+  width: 100%;
+  margin: 100px auto;
 }
 #section .pradagroup .pradagroup_title{
-  font-size: 2vw;
+  width: 200px;
+  margin: 50px auto;
+  text-align: center;
+  font-size: 1.5vw;
   font-weight: 500;
-  margin-bottom: 50px;
-  margin-left: 50px;
 }
 #section .pradagroup .logo_gr{
   display: flex;
@@ -663,18 +669,21 @@ body{
 @media all and (min-width:769px) and (max-width:1024px){
   #section{
     width: 100%;
+    min-width: none;
   }
   #section .main .main_title{
     font-size: 23pt;
     font-weight: 600;
+    margin-top: 100px;
   }
   #section .main .main_banner{
     width: 100%;height: 400px;
+    margin-top: 100px;
     /* border: 1px solid red; */
   }
   #section .main .main_img>li img{
     height: 100%;
-      transform: translate(0%, -20%);
+    transform: translate(0%, -20%);
   }
   #section .main .main_txt{
     font-size: 11pt;
@@ -698,8 +707,11 @@ body{
   #section .sustainable .swiper-wrapper .swiper-slide-active{
     width: 600px!important;
   }
+
+  /* ----------------------------------------- */
   #section .change{
     width: 100%;
+    min-width: 0px;
   }
   #section .change .change_title{
     font-size: 18pt;
@@ -715,11 +727,27 @@ body{
   #section .change .change_group>li:after{
     font-size: 10pt;
   }
+  
+  #parallax__cont {
+    width: 100%;
+    min-width:0px;
+  }
+  .parallax__item:nth-child(even) {
+    margin-left: 0;
+    text-align: left;
+  }
+  .parallax__item:nth-child(even) .parallax__item__desc {
+    margin-right: auto;
+    margin-left: -25.5vw;
+  }
+
+/* --------------------------------------------- */
+
   #section .renylon{
     width:100%;
   }
   #section .renylon .renylon_intro_right .renylon_txt{
-    font-size: 10pt;
+    font-size: 1.7vw;
   }
   #section .renylon .renylon_conts .renylon_left{
     box-sizing: border-box;
@@ -823,6 +851,7 @@ body{
 
 #section .sustainable{
   width: 100%;
+  min-width: 0px;
   margin-top: 100px;
 }
 #section .sustainable .sus_title{
@@ -840,7 +869,6 @@ body{
 }
 #section .sustainable .sus_congroup .swiper-wrapper{
   margin-left: 10px;
-  overflow: hidden;
 }
 #section .sustainable .swiper-wrapper .swiper-slide-active{
   width: 500px!important;
@@ -985,8 +1013,8 @@ body{
   /* border: 1px solid red; */
 }
 #section .renylon .renylon_conts .renylon_product li .angle{
-  border-bottom: 90px solid rgba(128, 128, 128, 0.229);
-  border-right: 90px solid rgba(128, 128, 128, 0.229);
+  border-bottom: 90px solid #00273d53;
+  border-right: 90px solid #00273d53;
   border-top: 90px solid transparent;
   border-left: 90px solid transparent;
 }
