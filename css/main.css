@@ -165,8 +165,10 @@ body{
 }
 #section .section3 .ready_title>p{
     color: #525252;
-    font-size: 1.5em;
+    font-size: 30px;
     font-weight: 300;
+    width: calc(100% - 20%);
+    margin: 0 auto;
     margin-top: 20px;
 }
 /* #section .section3 .ready .ready_list{
@@ -510,13 +512,13 @@ body{
     font-weight: 300;
 }
 #section .section6 .prada_sphere .sphere>button{
-    width: 200px;
-    height: 45px;
-    font-size: 20px;
+    width: 30%;
+    /* height: px; */
+    font-size: 1.3vw;
     background-color: white;
     display: flex;
     justify-content: space-between;
-    padding: 5px 20px;
+    padding: 5px 2%;
     box-sizing: border-box;
     margin-bottom: 100px;
 }
@@ -552,7 +554,7 @@ body{
 #section .section6 .prada_sphere .accodian .acco_group>li .m_txt{
     padding: 5% 10%;
     display: none;
-    font-size: 0.9vw;
+    font-size: 1.2vw;
     line-height: 2em;
     color: #525252;
 }
@@ -692,6 +694,9 @@ body{
         padding: 0;
     }
 /* --------------------------------------------------- */
+    #section .section3 .ready_title>p{
+        font-size: 18px;
+    }
     #section .section3 .wrap{
         margin-top: 50px;
     }
