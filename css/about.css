@@ -149,20 +149,22 @@ body{
 /* ------------ */
 
 #section .change{    
-  width: calc(100% - 640px);
+  width: 100%;
   margin: 0 auto;   
   margin-top: 200px;
   /* display: none; */
 }
 #section .change .change_title{
   text-align: right;
+  margin-right: 150px;
   font-size: 20pt;
   font-weight: 400;
 }
 #section .change .change_txt{
   text-align: right;
   margin-top: 20px;
-  font-size: 1.5vw;
+  margin-right: 150px;
+  font-size: 15pt;
   font-weight: 300;
 }
 #section .change .change_group{
@@ -233,7 +235,7 @@ body{
 
 #parallax__cont {
   max-width: 1600px;
-  width: 98%;
+  width: 100%;
   margin: 0 auto;
   background-color: rgba(255,255,255,0.1);
 }
@@ -243,7 +245,7 @@ body{
   color: #525252;
 }
 .parallax__item {
-  width: 800px;
+  width: 70%;
   max-width: 70vw;
   margin: 3vw auto;
   /* background-color: rgba(255,255,255,0.3); */
@@ -290,12 +292,13 @@ body{
   background-image: url(..//images/sub_enviro.jpg);
 }
 .parallax__item__desc {
+  width: 100%;
   color: #000;
   font-size: 1.4vw;
   font-weight: 300;
   line-height: 1.4;
   margin-top: -5vw;
-  margin-left: -38vw;
+  margin-left: 5%;
   z-index: 100;
   position: relative;
   word-break: keep-all;
@@ -585,6 +588,7 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: center center;
 }
 #section .pradagroup{
   width: calc(100%-20%);
