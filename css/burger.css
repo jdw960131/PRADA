@@ -84,13 +84,13 @@ display: none;
     display: flex;
     justify-content: space-between;
 }
-#header .ham .ham_gnb>li .ham_gnb_gr>a:hover{
+#header .ham .ham_gnb>li .ham_gnb_gr>p:hover{
     font-weight: 800;
 }
-#header .ham .ham_gnb>li>a:hover{
+#header .ham .ham_gnb>li>p:hover{
     font-weight: 800;
 }
-#header .ham .ham_gnb>li>a>span{
+#header .ham .ham_gnb>li>p>span{
     /* border: 1px solid blue; */
     font-size:20pt
 }
