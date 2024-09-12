@@ -840,6 +840,9 @@ body{
 #section .main{
   width: 100%;
 }
+#section .main .main_title{
+  margin-top: 50px;
+}
 #section .main .main_banner{
   display: none;
 }
@@ -861,8 +864,10 @@ body{
 #section .sustainable .sus_title{
   width: 100%;
   margin: 0 auto;
-  font-size: 13pt;
+  font-size: 15pt;
   text-align: center;
+  border-top: 0.2px solid gray;
+  padding-top: 50px;
 }
 #section .sustainable .sus_arrow{
   display: none;
@@ -870,9 +875,11 @@ body{
 #section .sustainable .sus_txt{
   font-size: 10pt;
   text-align: center;
+  padding-left:10px;
+  padding-right: 10px;
 }
 #section .sustainable .sus_congroup .swiper-wrapper{
-  margin-left: 10px;
+  margin-left: 80px;
 }
 #section .sustainable .swiper-wrapper .swiper-slide-active{
   width: 500px!important;
@@ -892,7 +899,7 @@ body{
   display: block;
 }
 #section .change .change_title{
-  font-size: 18pt;
+  font-size: 15pt;
   text-align: center;
 }
 #section .change .change_group{
@@ -1000,15 +1007,14 @@ body{
   font-size: 10pt;
   padding: 5px;
 }
-#section .renylon .renylon_conts .renylon_left .button:hover{
+#section .renylon .renylon_conts .renylon_left .button .button_name:hover{
   background-color: rgba(173, 216, 230, 0.714);
-  border:1px solid rgba(173, 216, 230, 0.714)
+  border:1px solid rgba(173, 216, 230, 0.714);
 }
 #section .renylon .renylon_conts .renylon_product{
   width: 100%;
   margin: 50px auto;
   flex-wrap: nowrap;
-  /* border: 1px solid red; */
 }
 #section .renylon .renylon_product li{
   width: 25%;
@@ -1106,7 +1112,7 @@ body{
   margin : 30px auto;
   width: 100%; 
   text-align : center;
-  border : 1px solid red;
+  /* border : 1px solid red; */
 }
 #section .pradagroup .pradagroup_title{
   font-size: 12pt;
