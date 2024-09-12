@@ -75,6 +75,7 @@ display: none;
 }
 #header .ham .ham_gnb>li{
     /* border-bottom: 1px solid gray; */
+    border: 1px solid red;
     line-height: 75px;
     font-size: 20pt;
     font-weight: 600;
@@ -166,6 +167,6 @@ display: none;
     font-weight: 500;
 }
 #header .ham .ham_gnb>li:last-child a{
-    text-decoration: underline;
+    color: #afe0ff;
 }
 }
