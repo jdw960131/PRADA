@@ -405,48 +405,54 @@ body{
   justify-content: space-around;
 }
 #section .renylon .renylon_conts .renylon_product li{
-  width:45%;height: 45%;
+  width:45%;height: 40%;
   /* height: 100%; */
   position: relative;
   overflow: hidden;
+  transition: all 0.4s;
   /* border: 1px solid red; */
 }
 
 #section .renylon .renylon_conts .renylon_product li img
 {
   width: 100%;height: 100%;
-  transition: all 0.8s;
+  object-fit: cover;
+  transition: all 0.5s;
 }
-#section .renylon .renylon_conts .renylon_product li .angle {
+#section .renylon .renylon_conts .renylon_product li .angle{
   width: 0px; height:0px;
-  border-bottom: 150px solid #00273d53;
-  border-right: 150px solid #00273d53;
-  border-top: 150px solid transparent;
-  border-left: 150px solid transparent;
-  color: #fff;
+  border-bottom: 9vw solid #00273d53;
+  border-right: 9vw solid #00273d53;
+  border-top: 9vw solid transparent;
+  border-left: 9vw solid transparent;
+  color: #dddddd;
   position: absolute;
   bottom: 0px; right: 0px;
   cursor: pointer;
-  display: none;
-  transition: all 0.3s;
+  /* display: none; */
+  transition: all 0.8s;
+  transform: translateY(200px);
+
 }
 #section .renylon .renylon_conts .renylon_product>li .pro_name{
   width: 150px;height: 100px;
   font-size: 18pt;
-  font-weight: 500;
+  font-weight: 400;
   position: absolute;
-  right: 0px; bottom: 0px;
-  display: none;
-  color: #fff;
+  right: -10px; bottom: 0px;
+  /* display: none; */
+  opacity: 0;
+  color: #dbdbdb;
 }
 #section .renylon_conts .renylon_product li:hover img{
-  transform:scale(1.5);
+  transform:scale(1.1);
 }
 #section .renylon_conts .renylon_product li:hover .angle{
   display: block;
+  transform: translateY(0px)
 }
 #section .renylon_conts .renylon_product li:hover .pro_name{
-  display: block;
+  opacity: 1;
 }
 
 
@@ -708,7 +714,7 @@ body{
     width: 600px!important;
   }
 
-  /* ----------------------------------------- */
+  /* --tab_cha--------------------------------------- */
   #section .change{
     width: 100%;
     min-width: 0px;
@@ -741,7 +747,7 @@ body{
     margin-left: -25.5vw;
   }
 
-/* --------------------------------------------- */
+/* --tab_re------------------------------------------- */
 
   #section .renylon{
     width:100%;
@@ -773,14 +779,12 @@ body{
   #section .renylon .renylon_conts .renylon_product>li {
     position: relative;
   }
-  #section .renylon .renylon_conts .renylon_product>li .angle .pro_name{
-    width: 100px;height: 30px;
-    font-size: 15pt;
-    font-weight: 100;
-    position: absolute;
-    top: 0;left: 0;
-    /* border: 1px solid blue; */
+  #section .renylon .renylon_conts .renylon_product>li .pro_name{
+    font-size: 13pt;
+    right: -70px;bottom:-50px
   }
+  /* -tab_value------------------------------- */
+
   #section .value{
     width: 100%
   }
@@ -883,6 +887,7 @@ body{
 
 #section .change{
   width: 100%;
+  min-width: 10px;
   margin-top: 100px;
   display: block;
 }
@@ -905,6 +910,7 @@ body{
   position: relative;
 }
 #section .change .change_group>li.acco{
+  width: 100%;
   height: 300px;
 }
 #section .change .change_group>li .change_conts .detail .con_txt{
@@ -936,6 +942,9 @@ body{
 #section .change .change_group>li .change_conts>li{
   width: 100%;
 }
+#section .change .change_group>li .change_conts>li p{
+  color: #d1d1d1;
+}
 
 #parallax__cont{
   display: none;
@@ -958,7 +967,7 @@ body{
   /* margin-top: 100px; */
 }
 #section .renylon .renylon_intro .renylon_txt{
-  width: 100%;height: 300px;
+  width: 100%; height: 230px;
   font-size: 11pt; text-align: center;
   margin: 0px auto;
   /* border: 1px solid blue; */
@@ -975,11 +984,11 @@ body{
   display: none;
 }
 #section .renylon .renylon_conts .renylon_left{
-  width: 100%;;
+  width: 100%;
 }
 #section .renylon .renylon_conts .renylon_left .renylon_detail{
   width: 100%;
-  margin: 100px auto;
+  margin: 20px auto;
   font-size: 12pt;
   text-align: center;
   /* border: 1px solid red; */
@@ -1007,7 +1016,7 @@ body{
 }
 #section .renylon .renylon_conts .renylon_product>li .pro_name{
   width: 60%;height: 20%;
-  font-size: 10pt;
+  font-size: 11pt;
   position: absolute;
   bottom: 0;right: 0;
   /* border: 1px solid red; */
@@ -1067,7 +1076,7 @@ body{
 #section .value .tab_conts{
   width: 100%;
   height: 500px;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
 }
 #section .value .tab_conts>li .tab_detail>li p{
   font-size: 10pt;
@@ -1091,16 +1100,20 @@ body{
 
 #section .background{
   display: none;
+  margin-top:50px;
 }
 #section .pradagroup{
+  margin : 30px auto;
   width: 100%; 
-  text-align: center;
+  text-align : center;
+  border : 1px solid red;
 }
 #section .pradagroup .pradagroup_title{
-  font-size: 15pt;
+  font-size: 12pt;
+  margin: 15px auto;
 }
 #section .pradagroup .logo_gr li>a>img{
-  height: 100px;
+  height: 80px;
 }
 }
 
