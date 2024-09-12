@@ -331,7 +331,7 @@ body{
 #section .section4 .living_wrap .living_02>p{
     font-weight: 300;
 }
-#section .section4 .living_wrap .living_02>button{
+#section .section4 .living_wrap .living_02 button{
     width: 180px;
     height: 55px;
     font-size: 20px;
@@ -343,7 +343,7 @@ body{
     border: none;
     position: relative;
 }
-#section .section4 .living_wrap .living_02>button::before{
+#section .section4 .living_wrap .living_02 button::before{
     content: "";
     display: block;
     width: 0%;
@@ -358,11 +358,11 @@ body{
     box-sizing: border-box;
     transition: all 0.2s;
 }
-#section .section4 .living_wrap .living_02>button:hover::before{
+#section .section4 .living_wrap .living_02 button:hover::before{
     width: 100%;
     /* left: 0; */
 }
-#section .section4 .living_wrap .living_02>button::after{
+#section .section4 .living_wrap .living_02 button::after{
     content: "";
     display: block;
     width: 100%;
@@ -377,7 +377,7 @@ body{
     box-sizing: border-box;
     transition: all 0.2s;
 }
-#section .section4 .living_wrap .living_02>button:hover::after{
+#section .section4 .living_wrap .living_02 button:hover::after{
     height: 100%;
 }
 /* --------------------------------------------------- */
@@ -973,14 +973,14 @@ body{
         display: none;
         z-index: 1;
     }
-    #section .section4 .living_wrap .living_02>button{
+    #section .section4 .living_wrap .living_02 button{
         font-size: 12px;
         width: 120px;
         height: 30px;
         padding: 0px;
         margin-top: 30px;
     }
-    #section .section4 .living_wrap .living_02>button::before{
+    #section .section4 .living_wrap .living_02 button::before{
         height: 30px;
     }
 /* --------------------------------------------------- */
