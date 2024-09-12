@@ -75,7 +75,6 @@ display: none;
 }
 #header .ham .ham_gnb>li{
     /* border-bottom: 1px solid gray; */
-    border: 1px solid red;
     line-height: 75px;
     font-size: 20pt;
     font-weight: 600;
@@ -85,13 +84,13 @@ display: none;
     display: flex;
     justify-content: space-between;
 }
-#header .ham .ham_gnb>li .ham_gnb_gr>a:hover{
+#header .ham .ham_gnb>li .ham_gnb_gr>p:hover{
     font-weight: 800;
 }
-#header .ham .ham_gnb>li>a:hover{
+#header .ham .ham_gnb>li>p:hover{
     font-weight: 800;
 }
-#header .ham .ham_gnb>li>a>span{
+#header .ham .ham_gnb>li>p>span{
     /* border: 1px solid blue; */
     font-size:20pt
 }
@@ -167,6 +166,6 @@ display: none;
     font-weight: 500;
 }
 #header .ham .ham_gnb>li:last-child a{
-    color: #afe0ff;
+    text-decoration: underline;
 }
 }
