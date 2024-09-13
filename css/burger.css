@@ -75,7 +75,7 @@ display: none;
 }
 #header .ham .ham_gnb>li{
     /* border-bottom: 1px solid gray; */
-    line-height: 75px;
+    line-height: 65px;
     font-size: 15pt;
     font-weight: 500;
     padding: 0px 20px 0px 20px;
@@ -151,6 +151,9 @@ display: none;
 }
 #header .ham_sub{
     display: none;
+    background-color:#c7c7c731;
+    padding: 10px;
+    width: 80%;
 }
 #header .ham_sub:nth-child(1){
     display: block;
